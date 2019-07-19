@@ -1,0 +1,16 @@
+PODS:
+  - FZFilePreviewer (0.1.0)
+
+DEPENDENCIES:
+  - FZFilePreviewer (from `../`)
+
+EXTERNAL SOURCES:
+  FZFilePreviewer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FZFilePreviewer: 7ca0cdaa75962f10ed044b934ab27952a31bc5b7
+
+PODFILE CHECKSUM: 9de3274fbabd07ebf09d9661bde60f2632e2f3e8
+
+COCOAPODS: 1.7.4

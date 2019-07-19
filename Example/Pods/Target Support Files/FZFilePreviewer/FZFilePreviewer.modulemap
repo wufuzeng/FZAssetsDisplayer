@@ -1,0 +1,6 @@
+framework module FZFilePreviewer {
+  umbrella header "FZFilePreviewer-umbrella.h"
+
+  export *
+  module * { export * }
+}
