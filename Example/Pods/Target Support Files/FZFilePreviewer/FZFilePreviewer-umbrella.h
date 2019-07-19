@@ -10,6 +10,13 @@
 #endif
 #endif
 
+#import "FZFilePreviewer.h"
+#import "FZFilePreviewGifCell.h"
+#import "FZFilePreviewLiveCell.h"
+#import "FZFilePreviewPictureCell.h"
+#import "FZFilePreviewVideoCell.h"
+#import "FZFilePreviewView.h"
+#import "FZFilePreviewModel.h"
 
 FOUNDATION_EXPORT double FZFilePreviewerVersionNumber;
 FOUNDATION_EXPORT const unsigned char FZFilePreviewerVersionString[];

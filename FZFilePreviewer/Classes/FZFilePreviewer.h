@@ -9,4 +9,8 @@
 #define FZFilePreviewer_h
 
 
+#import "FZFilePreviewModel.h"
+
+#import "FZFilePreviewView.h"
+
 #endif /* FZFilePreviewer_h */

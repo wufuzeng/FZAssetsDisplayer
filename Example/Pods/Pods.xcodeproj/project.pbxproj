@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006A3D43C89F87EC22546C895D402751 /* FZFilePreviewVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */; };
 		02366DB4ADBDC46BD2B7F43391F88C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0554A3B9B825467940C096B456CEB92D /* FZFilePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */; };
+		112DBE31ED6BFB38C19D6AA24D6774A9 /* FZFilePreviewLiveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14E9CCE79AD042B81D5EC2F399740465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		200A6CA06FD77B7B0D83191FBE119330 /* FZFilePreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F7B7BDBF0CD57BBEAF9F8453258008 /* FZFilePreviewGifCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CA515AD9BB4C94504258725A2456EF5 /* FZFilePreviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CE32C59601BB40AD4EB7D81A15E02BF /* FZFilePreviewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */; };
 		56BD9678C3CD56FED0F4BB41E17BC0D9 /* Pods-FZFilePreviewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B70B9A64DDE6B5888668A6EC48C16A0 /* Pods-FZFilePreviewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		606264CB22E1BF0C00A817FA /* FZFilePreviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = 606264CA22E1BF0C00A817FA /* FZFilePreviewer.h */; };
-		606264CE22E1BF3600A817FA /* FZFilePreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 606264CC22E1BF3600A817FA /* FZFilePreviewView.h */; };
-		606264CF22E1BF3600A817FA /* FZFilePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 606264CD22E1BF3600A817FA /* FZFilePreviewView.m */; };
+		5AB65480327378DD795ABE83CF4E0602 /* FZFilePreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */; };
 		61079A0448693AA71E886E4158049D39 /* Pods-FZFilePreviewer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6219594878A2CAE881A3D51504C8445E /* Pods-FZFilePreviewer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84068FABC3CD9DA9CB8A5852EDADD03D /* FZFilePreviewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F36686B599BCEFE88E3E57643E07C7CF /* FZFilePreviewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		862DC9F5A131CC5401F1B953B3285C27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		7F32D5F7B93D173EB722413E40318FCA /* FZFilePreviewGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */; };
 		8A55B902E903F78AF1D6EB092606A2B9 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0D059F8F8A522305ECD58BC276797A /* Pods-FZFilePreviewer_Example-dummy.m */; };
 		8DEF90357FDD7F46EAB26DA76F6B9083 /* Pods-FZFilePreviewer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DBE064E451CFC98E2571909124172E /* Pods-FZFilePreviewer_Tests-dummy.m */; };
-		C0624436A61F7A25411FF916BA7BECE5 /* FZFilePreviewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B15C01E4DFF3EFF5735E7BF3390FC82 /* FZFilePreviewer-dummy.m */; };
+		9684C622528B72FFE5F3C03729FABCA5 /* FZFilePreviewVideoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F4C1C75EBB4C896EDC634CFD5F0A14B /* FZFilePreviewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFAA72EC6C2303F2D837BDFAEF245CEE /* FZFilePreviewPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */; };
+		CB06877EF5E294A4A7F4C38FDA99CE9A /* FZFilePreviewLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */; };
+		CC4E1A5A3397A4C4ECBCC64CD60703A3 /* FZFilePreviewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB0C24B3A4F249ACFF77E14E420EA7F7 /* FZFilePreviewPictureCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EFE00121081D5DE9A7DE22C3C1902FC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,55 +50,65 @@
 
 /* Begin PBXFileReference section */
 		0051D206BF42959A4DA5F8C98D755918 /* Pods-FZFilePreviewer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZFilePreviewer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		02257B2ECA6BE9AAAAC88A2C76FCEC9F /* FZFilePreviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZFilePreviewer.xcconfig; sourceTree = "<group>"; };
-		060D05245969F3D47E9E1D00AEED5177 /* FZFilePreviewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FZFilePreviewer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1AB23F138ED361132AA7DFA77B20E4AA /* Pods_FZFilePreviewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FZFilePreviewer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB23F138ED361132AA7DFA77B20E4AA /* Pods_FZFilePreviewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZFilePreviewer_Tests.framework; path = "Pods-FZFilePreviewer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2056621F254F7865801604EEF0795A0C /* Pods-FZFilePreviewer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		25D51F0D5749DFDC119B77C0C90E15B3 /* FZFilePreviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FZFilePreviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27E416E829CE1F4D7C44B5BCB140B1A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		2DC1C60D29BD7493D3E7D50FE658CBE6 /* FZFilePreviewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZFilePreviewer-Info.plist"; sourceTree = "<group>"; };
+		25D51F0D5749DFDC119B77C0C90E15B3 /* FZFilePreviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZFilePreviewer.framework; path = FZFilePreviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewVideoCell.h; sourceTree = "<group>"; };
+		30C5874EB1572382547C8AC0B7860321 /* FZFilePreviewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-prefix.pch"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32F1D3C5D4B8568E5435397CC4A6AF99 /* Pods-FZFilePreviewer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Example-Info.plist"; sourceTree = "<group>"; };
+		3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewVideoCell.m; sourceTree = "<group>"; };
 		3C46D70393B79A001F77C8908D3F1E5B /* Pods-FZFilePreviewer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZFilePreviewer_Example.modulemap"; sourceTree = "<group>"; };
 		41F5184173A15C51E79328E764A9BBB7 /* Pods-FZFilePreviewer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		514A6DCA1F2246288A285DEC747A7965 /* FZFilePreviewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-prefix.pch"; sourceTree = "<group>"; };
+		47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewView.m; sourceTree = "<group>"; };
 		5C0D059F8F8A522305ECD58BC276797A /* Pods-FZFilePreviewer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZFilePreviewer_Example-dummy.m"; sourceTree = "<group>"; };
-		606264CA22E1BF0C00A817FA /* FZFilePreviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FZFilePreviewer.h; path = FZFilePreviewer/Classes/FZFilePreviewer.h; sourceTree = "<group>"; };
-		606264CC22E1BF3600A817FA /* FZFilePreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewView.h; sourceTree = "<group>"; };
-		606264CD22E1BF3600A817FA /* FZFilePreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewView.m; sourceTree = "<group>"; };
+		5D4349B89A8C67CD892BF67E7FFF8793 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		6219594878A2CAE881A3D51504C8445E /* Pods-FZFilePreviewer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZFilePreviewer_Tests-umbrella.h"; sourceTree = "<group>"; };
-		650758A280775A5454005CC47AAE3F68 /* Pods_FZFilePreviewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FZFilePreviewer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B15C01E4DFF3EFF5735E7BF3390FC82 /* FZFilePreviewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZFilePreviewer-dummy.m"; sourceTree = "<group>"; };
+		650758A280775A5454005CC47AAE3F68 /* Pods_FZFilePreviewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZFilePreviewer_Example.framework; path = "Pods-FZFilePreviewer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewView.h; sourceTree = "<group>"; };
+		688C18046660864E848628B9C3B1D71B /* FZFilePreviewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZFilePreviewer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7BED6F751D1125EF7A697B50C4D2EB0F /* Pods-FZFilePreviewer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewPictureCell.h; sourceTree = "<group>"; };
+		8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewLiveCell.m; sourceTree = "<group>"; };
 		84E6E555D059B83773F4B1F907A14517 /* Pods-FZFilePreviewer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZFilePreviewer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewPictureCell.m; sourceTree = "<group>"; };
 		8B70B9A64DDE6B5888668A6EC48C16A0 /* Pods-FZFilePreviewer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZFilePreviewer_Example-umbrella.h"; sourceTree = "<group>"; };
+		9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewGifCell.h; sourceTree = "<group>"; };
 		97DBE064E451CFC98E2571909124172E /* Pods-FZFilePreviewer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZFilePreviewer_Tests-dummy.m"; sourceTree = "<group>"; };
+		9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZFilePreviewer.xcconfig; sourceTree = "<group>"; };
 		9CFAC38F02AA757129724364C3464F63 /* Pods-FZFilePreviewer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E413597E50EAE40F4DBEA97D74FE399 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewModel.h; sourceTree = "<group>"; };
+		A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZFilePreviewer.h; path = FZFilePreviewer/Classes/FZFilePreviewer.h; sourceTree = "<group>"; };
+		A3FE2D3CE6EBC0C604048D6FA55913E0 /* FZFilePreviewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZFilePreviewer-Info.plist"; sourceTree = "<group>"; };
+		A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewLiveCell.h; sourceTree = "<group>"; };
+		A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewGifCell.m; sourceTree = "<group>"; };
+		AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewModel.m; sourceTree = "<group>"; };
+		AEAD762D525B3BE35D07D4EDEF78AB3E /* FZFilePreviewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZFilePreviewer.modulemap; sourceTree = "<group>"; };
+		AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZFilePreviewer-dummy.m"; sourceTree = "<group>"; };
+		BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-umbrella.h"; sourceTree = "<group>"; };
 		CA96D5CB72CAC46554D3DA4A10D90722 /* Pods-FZFilePreviewer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D790F93FDB9F8368A948F36E4AC735E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D9EAC9D6E61154CD1C3DC85B24035640 /* FZFilePreviewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZFilePreviewer.modulemap; sourceTree = "<group>"; };
 		DCD0354F29CD79B6FF2AAA7D638E96E4 /* Pods-FZFilePreviewer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Tests-Info.plist"; sourceTree = "<group>"; };
 		ED8EFE3E31D2E5F70128AB77239D3B70 /* Pods-FZFilePreviewer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZFilePreviewer_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F36686B599BCEFE88E3E57643E07C7CF /* FZFilePreviewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-umbrella.h"; sourceTree = "<group>"; };
 		F6B96E7B59C59B2E61CF500C7A7116F7 /* Pods-FZFilePreviewer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZFilePreviewer_Tests.modulemap"; sourceTree = "<group>"; };
 		FEF72D0307056636DE67E3FCDD7637CE /* Pods-FZFilePreviewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0DA192AF80CE9521D3A9638DE31AB528 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E9CCE79AD042B81D5EC2F399740465 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2BAEAFD2B494A274DD8E06290C02F85F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EFE00121081D5DE9A7DE22C3C1902FC3 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFFB59856FCFAAEE5E203F4F7EAF19F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				862DC9F5A131CC5401F1B953B3285C27 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,24 +133,45 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3B4CCC869235E2FE5B7BE4C0D359CC43 /* Pod */ = {
+		1BC72CB5C5AA399D33D9355007B07390 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				060D05245969F3D47E9E1D00AEED5177 /* FZFilePreviewer.podspec */,
-				27E416E829CE1F4D7C44B5BCB140B1A8 /* LICENSE */,
-				D790F93FDB9F8368A948F36E4AC735E8 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		606264C822E1BED500A817FA /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				606264CC22E1BF3600A817FA /* FZFilePreviewView.h */,
-				606264CD22E1BF3600A817FA /* FZFilePreviewView.m */,
+				9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */,
+				A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */,
+				A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */,
+				8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */,
+				83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */,
+				8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */,
+				2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */,
+				3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */,
+				6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */,
+				47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */,
 			);
 			name = Core;
 			path = FZFilePreviewer/Classes/Core;
+			sourceTree = "<group>";
+		};
+		1E8DF02C0792ECE144E8CBB0D86EB914 /* FZFilePreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */,
+				1BC72CB5C5AA399D33D9355007B07390 /* Core */,
+				8AAB1A2A8C487D9D002657596D666105 /* Model */,
+				3C5679F77C8D284C5DE898DFDA9D7163 /* Pod */,
+				8C7760833542F887005896C2105246C4 /* Support Files */,
+			);
+			name = FZFilePreviewer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3C5679F77C8D284C5DE898DFDA9D7163 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				688C18046660864E848628B9C3B1D71B /* FZFilePreviewer.podspec */,
+				5D4349B89A8C67CD892BF67E7FFF8793 /* LICENSE */,
+				9E413597E50EAE40F4DBEA97D74FE399 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		68169AAC92D80A08180411BA321F0DA1 /* Pods-FZFilePreviewer_Tests */ = {
@@ -149,15 +190,25 @@
 			path = "Target Support Files/Pods-FZFilePreviewer_Tests";
 			sourceTree = "<group>";
 		};
-		7AABF5E2A3FF79BD1C20392EE5F29815 /* Support Files */ = {
+		8AAB1A2A8C487D9D002657596D666105 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D9EAC9D6E61154CD1C3DC85B24035640 /* FZFilePreviewer.modulemap */,
-				02257B2ECA6BE9AAAAC88A2C76FCEC9F /* FZFilePreviewer.xcconfig */,
-				7B15C01E4DFF3EFF5735E7BF3390FC82 /* FZFilePreviewer-dummy.m */,
-				2DC1C60D29BD7493D3E7D50FE658CBE6 /* FZFilePreviewer-Info.plist */,
-				514A6DCA1F2246288A285DEC747A7965 /* FZFilePreviewer-prefix.pch */,
-				F36686B599BCEFE88E3E57643E07C7CF /* FZFilePreviewer-umbrella.h */,
+				9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */,
+				AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */,
+			);
+			name = Model;
+			path = FZFilePreviewer/Classes/Model;
+			sourceTree = "<group>";
+		};
+		8C7760833542F887005896C2105246C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEAD762D525B3BE35D07D4EDEF78AB3E /* FZFilePreviewer.modulemap */,
+				9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */,
+				AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */,
+				A3FE2D3CE6EBC0C604048D6FA55913E0 /* FZFilePreviewer-Info.plist */,
+				30C5874EB1572382547C8AC0B7860321 /* FZFilePreviewer-prefix.pch */,
+				BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FZFilePreviewer";
@@ -172,16 +223,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		B8E3477A640DD00E07CFAEE65F45AA3A /* FZFilePreviewer */ = {
+		BAA1B358C17A225B925DA07D64EDAEDA /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				606264CA22E1BF0C00A817FA /* FZFilePreviewer.h */,
-				606264C822E1BED500A817FA /* Core */,
-				3B4CCC869235E2FE5B7BE4C0D359CC43 /* Pod */,
-				7AABF5E2A3FF79BD1C20392EE5F29815 /* Support Files */,
+				1E8DF02C0792ECE144E8CBB0D86EB914 /* FZFilePreviewer */,
 			);
-			name = FZFilePreviewer;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -196,7 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				FB78EA5F56F548A7FC04F3C654508718 /* Development Pods */,
+				BAA1B358C17A225B925DA07D64EDAEDA /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				07795447C299419E27E498D9E2A432F1 /* Products */,
 				B75E33F6A35E2E553FDFBC60B902A1EB /* Targets Support Files */,
@@ -228,14 +275,6 @@
 			path = "Target Support Files/Pods-FZFilePreviewer_Example";
 			sourceTree = "<group>";
 		};
-		FB78EA5F56F548A7FC04F3C654508718 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B8E3477A640DD00E07CFAEE65F45AA3A /* FZFilePreviewer */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -255,13 +294,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF8CB1701AA754D285747F251087FBD5 /* Headers */ = {
+		74DC0E85343B231B832784EF6076E5F1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				606264CB22E1BF0C00A817FA /* FZFilePreviewer.h in Headers */,
-				606264CE22E1BF3600A817FA /* FZFilePreviewView.h in Headers */,
-				84068FABC3CD9DA9CB8A5852EDADD03D /* FZFilePreviewer-umbrella.h in Headers */,
+				9F4C1C75EBB4C896EDC634CFD5F0A14B /* FZFilePreviewer-umbrella.h in Headers */,
+				2CA515AD9BB4C94504258725A2456EF5 /* FZFilePreviewer.h in Headers */,
+				23F7B7BDBF0CD57BBEAF9F8453258008 /* FZFilePreviewGifCell.h in Headers */,
+				112DBE31ED6BFB38C19D6AA24D6774A9 /* FZFilePreviewLiveCell.h in Headers */,
+				CC4E1A5A3397A4C4ECBCC64CD60703A3 /* FZFilePreviewModel.h in Headers */,
+				EB0C24B3A4F249ACFF77E14E420EA7F7 /* FZFilePreviewPictureCell.h in Headers */,
+				9684C622528B72FFE5F3C03729FABCA5 /* FZFilePreviewVideoCell.h in Headers */,
+				200A6CA06FD77B7B0D83191FBE119330 /* FZFilePreviewView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,12 +314,12 @@
 /* Begin PBXNativeTarget section */
 		2E76D13EEE314B50854E143D9000D325 /* FZFilePreviewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 80A11A0C3BA5D2ED28692F9E62631908 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */;
+			buildConfigurationList = 545616F688A933F7704351888FA8F1B0 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */;
 			buildPhases = (
-				DF8CB1701AA754D285747F251087FBD5 /* Headers */,
-				C85C8CD2D0DCE81BB00E87D401638B44 /* Sources */,
-				2BFFB59856FCFAAEE5E203F4F7EAF19F /* Frameworks */,
-				8C9E6E135A98AC87CF812D9FE14FEA3C /* Resources */,
+				74DC0E85343B231B832784EF6076E5F1 /* Headers */,
+				20F7B21F811D66D981045D27A6B2D4FD /* Sources */,
+				0DA192AF80CE9521D3A9638DE31AB528 /* Frameworks */,
+				F3EF6498B125E481067D5BE8BBB9A9F2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -360,14 +404,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C9E6E135A98AC87CF812D9FE14FEA3C /* Resources */ = {
+		BF9D59AAD1E19EDF42553C5F9DF0467D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BF9D59AAD1E19EDF42553C5F9DF0467D /* Resources */ = {
+		F3EF6498B125E481067D5BE8BBB9A9F2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,20 +429,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		20F7B21F811D66D981045D27A6B2D4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CE32C59601BB40AD4EB7D81A15E02BF /* FZFilePreviewer-dummy.m in Sources */,
+				7F32D5F7B93D173EB722413E40318FCA /* FZFilePreviewGifCell.m in Sources */,
+				CB06877EF5E294A4A7F4C38FDA99CE9A /* FZFilePreviewLiveCell.m in Sources */,
+				5AB65480327378DD795ABE83CF4E0602 /* FZFilePreviewModel.m in Sources */,
+				AFAA72EC6C2303F2D837BDFAEF245CEE /* FZFilePreviewPictureCell.m in Sources */,
+				006A3D43C89F87EC22546C895D402751 /* FZFilePreviewVideoCell.m in Sources */,
+				0554A3B9B825467940C096B456CEB92D /* FZFilePreviewView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		863564A99D0C38AF8075A5DAFB51B35A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8A55B902E903F78AF1D6EB092606A2B9 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C85C8CD2D0DCE81BB00E87D401638B44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0624436A61F7A25411FF916BA7BECE5 /* FZFilePreviewer-dummy.m in Sources */,
-				606264CF22E1BF3600A817FA /* FZFilePreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +556,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -677,9 +727,40 @@
 			};
 			name = Debug;
 		};
-		C29BFD06CE2B1CAD1D7DA34CB3133940 /* Release */ = {
+		ACFD8EDE74279ECE749D7973FEC9CD7A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02257B2ECA6BE9AAAAC88A2C76FCEC9F /* FZFilePreviewer.xcconfig */;
+			baseConfigurationReference = 9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
+				PRODUCT_MODULE_NAME = FZFilePreviewer;
+				PRODUCT_NAME = FZFilePreviewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B025E616D2460EC34B9E7E076AF976E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -708,37 +789,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		E039E5D44A14F7B8C9EE19BC84403289 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02257B2ECA6BE9AAAAC88A2C76FCEC9F /* FZFilePreviewer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
-				PRODUCT_MODULE_NAME = FZFilePreviewer;
-				PRODUCT_NAME = FZFilePreviewer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -770,11 +820,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		80A11A0C3BA5D2ED28692F9E62631908 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */ = {
+		545616F688A933F7704351888FA8F1B0 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E039E5D44A14F7B8C9EE19BC84403289 /* Debug */,
-				C29BFD06CE2B1CAD1D7DA34CB3133940 /* Release */,
+				ACFD8EDE74279ECE749D7973FEC9CD7A /* Debug */,
+				B025E616D2460EC34B9E7E076AF976E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

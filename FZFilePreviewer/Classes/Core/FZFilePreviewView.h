@@ -7,9 +7,14 @@
 
 #import <UIKit/UIKit.h>
 
+#import "FZFilePreviewModel.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FZFilePreviewView : UIView
+
+-(void)preview:(NSArray <FZFilePreviewModel *>*)files;
+
 
 @end
 

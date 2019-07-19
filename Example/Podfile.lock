@@ -1,5 +1,5 @@
 PODS:
-  - FZFilePreviewer (0.1.0)
+  - FZFilePreviewer (0.0.1)
 
 DEPENDENCIES:
   - FZFilePreviewer (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZFilePreviewer: 7ca0cdaa75962f10ed044b934ab27952a31bc5b7
+  FZFilePreviewer: fa324049bf791643e8519d14fad620299bb79aa1
 
 PODFILE CHECKSUM: 9de3274fbabd07ebf09d9661bde60f2632e2f3e8
 

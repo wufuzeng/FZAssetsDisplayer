@@ -8,22 +8,44 @@
 
 #import "FZViewController.h"
 
+#import <FZFilePreviewer/FZFilePreviewer.h>
+
 @interface FZViewController ()
+
+@property (nonatomic,strong) FZFilePreviewView *previewView;
 
 @end
 
 @implementation FZViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    FZFilePreviewModel *model = [FZFilePreviewModel new];
+    model.image = [UIImage imageNamed:@"picture.jpeg"];
+    model.fileType = FZFilePreviewTypePicture;
+    
+    FZFilePreviewModel *model2 = [FZFilePreviewModel new];
+    model2.image = [UIImage imageNamed:@"picture.jpeg"];
+    model2.fileType = FZFilePreviewTypePicture;
+    
+    [self.previewView preview:@[model,model2,model,model]];
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+}
+
+#pragma mark -- Lazy Func --
+
+-(FZFilePreviewView *)previewView{
+    if (_previewView == nil) {
+        _previewView = [[FZFilePreviewView alloc]initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.width)];
+        
+        [self.view addSubview:_previewView];
+    }
+    return _previewView;
 }
 
 @end
