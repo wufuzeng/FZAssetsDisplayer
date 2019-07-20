@@ -7,21 +7,57 @@
 
 #import "FZFilePreviewVideoCell.h"
 
+#import "FZVideoPlayerView.h"
+#import "FZAVPlayer.h"
+@interface FZFilePreviewVideoCell ()
+
+@property (nonatomic,strong) FZAVPlayerView *playerView;
+
+@end
+
 @implementation FZFilePreviewVideoCell
 
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    if (self) {
+    if (self = [super initWithFrame:frame]) {
+        CGRect nFrame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
+        self.playerView.frame = nFrame;
         [self setupViews];
     }
     return self;
 }
 
 #pragma mark -- UI ----
+
+
+ 
 -(void)setupViews{
     
 }
 
+-(void)startPlay{
+    [self.playerView playWithUrl:self.URL];
+    
+}
+
+-(void)stopPlay{
+    [self.playerView stop];
+}
+
+
+-(FZAVPlayerView *)playerView{
+    if (_playerView == nil) {
+        _playerView = [FZAVPlayerView new];
+        _playerView.showControlView = YES;
+        _playerView.showTitleBar = NO;
+        _playerView.showBackBtn = NO;
+        _playerView.autoReplay = YES;
+        _playerView.disableFullScreen = NO;
+        _playerView.disableAdjustBrightnessOrVolume = YES;
+        _playerView.videoGravity = AVLayerVideoGravityResizeAspect;
+        _playerView.showInView = self;
+    }
+    return _playerView;
+}
 
 @end

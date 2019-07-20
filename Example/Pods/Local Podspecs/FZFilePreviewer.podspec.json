@@ -21,5 +21,10 @@
   "source_files": [
     "FZFilePreviewer/Classes/*",
     "FZFilePreviewer/Classes/**/*"
-  ]
+  ],
+  "dependencies": {
+    "FZAVPlayer": [
+      "~> 0.0.1"
+    ]
+  }
 }

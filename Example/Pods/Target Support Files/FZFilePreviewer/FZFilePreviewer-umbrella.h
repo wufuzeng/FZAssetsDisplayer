@@ -14,9 +14,12 @@
 #import "FZFilePreviewGifCell.h"
 #import "FZFilePreviewLiveCell.h"
 #import "FZFilePreviewPictureCell.h"
+#import "FZFilePreviewSceneCell.h"
 #import "FZFilePreviewVideoCell.h"
 #import "FZFilePreviewView.h"
 #import "FZFilePreviewModel.h"
+#import "FZGifImageView.h"
+#import "FZVideoPlayerView.h"
 
 FOUNDATION_EXPORT double FZFilePreviewerVersionNumber;
 FOUNDATION_EXPORT const unsigned char FZFilePreviewerVersionString[];

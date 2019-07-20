@@ -21,15 +21,30 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
 	
-    FZFilePreviewModel *model = [FZFilePreviewModel new];
-    model.image = [UIImage imageNamed:@"picture.jpeg"];
-    model.fileType = FZFilePreviewTypePicture;
+    FZFilePreviewModel *model1 = [FZFilePreviewModel new];
+    model1.image = [UIImage imageNamed:@"picture"];
+    model1.fileType = FZFilePreviewTypePicture;
     
     FZFilePreviewModel *model2 = [FZFilePreviewModel new];
-    model2.image = [UIImage imageNamed:@"picture.jpeg"];
-    model2.fileType = FZFilePreviewTypePicture;
+     NSURL *URL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Test" ofType:@"mov"]];
+    model2.URL = URL;
+    model2.fileType = FZFilePreviewTypeVideo;
+   
+    FZFilePreviewModel *model3 = [FZFilePreviewModel new];
+    model3.images = @[[UIImage imageNamed:@"picture1.jpg"],
+                      [UIImage imageNamed:@"picture2.jpg"],
+                      [UIImage imageNamed:@"picture3.jpg"]
+                      ];
+    model3.fileType = FZFilePreviewTypeScene;
     
-    [self.previewView preview:@[model,model2,model,model]];
+    FZFilePreviewModel *model4 = [FZFilePreviewModel new];
+    //model4.image = [UIImage imageNamed:@"GifQRCode.gif"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"GifQRCode" ofType:@"gif"];
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    model4.data = data;
+    model4.fileType = FZFilePreviewTypeGif;
+    
+    [self.previewView preview:@[model1,model4,model2,model3]];
 }
 
 - (void)didReceiveMemoryWarning{

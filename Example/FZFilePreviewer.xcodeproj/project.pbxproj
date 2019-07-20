@@ -20,9 +20,12 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		605A008A22E1CC7D00F6715E /* gif二维码.gif in Resources */ = {isa = PBXBuildFile; fileRef = 605A008922E1CC7D00F6715E /* gif二维码.gif */; };
-		605A008C22E1CD0F00F6715E /* picture.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 605A008B22E1CD0F00F6715E /* picture.jpeg */; };
-		605A008E22E1CF7D00F6715E /* picture_png.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A008D22E1CF7D00F6715E /* picture_png.png */; };
+		604BB12A22E2B74900FF2D96 /* picture1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 604BB12722E2B74900FF2D96 /* picture1.jpg */; };
+		604BB12B22E2B74900FF2D96 /* picture2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 604BB12822E2B74900FF2D96 /* picture2.jpg */; };
+		604BB12C22E2B74900FF2D96 /* picture3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 604BB12922E2B74900FF2D96 /* picture3.jpg */; };
+		604BB14422E3032800FF2D96 /* Test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 604BB14322E3032800FF2D96 /* Test.mov */; };
+		605A008A22E1CC7D00F6715E /* GifQRCode.gif in Resources */ = {isa = PBXBuildFile; fileRef = 605A008922E1CC7D00F6715E /* GifQRCode.gif */; };
+		605A008E22E1CF7D00F6715E /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A008D22E1CF7D00F6715E /* picture.png */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B4E4E957DAA003A4EE08941D /* Pods_FZFilePreviewer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FEF9942DE296161FFCCD77 /* Pods_FZFilePreviewer_Tests.framework */; };
@@ -61,9 +64,12 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
-		605A008922E1CC7D00F6715E /* gif二维码.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "gif二维码.gif"; sourceTree = "<group>"; };
-		605A008B22E1CD0F00F6715E /* picture.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture.jpeg; sourceTree = "<group>"; };
-		605A008D22E1CF7D00F6715E /* picture_png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture_png.png; sourceTree = "<group>"; };
+		604BB12722E2B74900FF2D96 /* picture1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture1.jpg; sourceTree = "<group>"; };
+		604BB12822E2B74900FF2D96 /* picture2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture2.jpg; sourceTree = "<group>"; };
+		604BB12922E2B74900FF2D96 /* picture3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = picture3.jpg; sourceTree = "<group>"; };
+		604BB14322E3032800FF2D96 /* Test.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = Test.mov; sourceTree = "<group>"; };
+		605A008922E1CC7D00F6715E /* GifQRCode.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GifQRCode.gif; sourceTree = "<group>"; };
+		605A008D22E1CF7D00F6715E /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -138,9 +144,7 @@
 		6003F593195388D20070C39A /* Example for FZFilePreviewer */ = {
 			isa = PBXGroup;
 			children = (
-				605A008D22E1CF7D00F6715E /* picture_png.png */,
-				605A008B22E1CD0F00F6715E /* picture.jpeg */,
-				605A008922E1CC7D00F6715E /* gif二维码.gif */,
+				604BB14222E3031200FF2D96 /* Resoures */,
 				6003F59C195388D20070C39A /* FZAppDelegate.h */,
 				6003F59D195388D20070C39A /* FZAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -182,6 +186,19 @@
 				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		604BB14222E3031200FF2D96 /* Resoures */ = {
+			isa = PBXGroup;
+			children = (
+				604BB14322E3032800FF2D96 /* Test.mov */,
+				605A008D22E1CF7D00F6715E /* picture.png */,
+				604BB12722E2B74900FF2D96 /* picture1.jpg */,
+				604BB12822E2B74900FF2D96 /* picture2.jpg */,
+				604BB12922E2B74900FF2D96 /* picture3.jpg */,
+				605A008922E1CC7D00F6715E /* GifQRCode.gif */,
+			);
+			name = Resoures;
 			sourceTree = "<group>";
 		};
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
@@ -289,12 +306,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				604BB12A22E2B74900FF2D96 /* picture1.jpg in Resources */,
+				604BB12B22E2B74900FF2D96 /* picture2.jpg in Resources */,
+				604BB14422E3032800FF2D96 /* Test.mov in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				604BB12C22E2B74900FF2D96 /* picture3.jpg in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				605A008A22E1CC7D00F6715E /* gif二维码.gif in Resources */,
+				605A008A22E1CC7D00F6715E /* GifQRCode.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				605A008E22E1CF7D00F6715E /* picture_png.png in Resources */,
-				605A008C22E1CD0F00F6715E /* picture.jpeg in Resources */,
+				605A008E22E1CF7D00F6715E /* picture.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,10 +381,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FZFilePreviewer_Example/Pods-FZFilePreviewer_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FZAVPlayer/FZAVPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/FZFilePreviewer/FZFilePreviewer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FZAVPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FZFilePreviewer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

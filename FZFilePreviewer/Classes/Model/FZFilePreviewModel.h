@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSUInteger, FZFilePreviewType) {
     FZFilePreviewTypePicture,
     FZFilePreviewTypeGif,
+    FZFilePreviewTypeScene,
     FZFilePreviewTypeLive,
     FZFilePreviewTypeVideo
 };
@@ -20,12 +21,16 @@ typedef NS_ENUM(NSUInteger, FZFilePreviewType) {
 
 @property (nonatomic,assign) FZFilePreviewType fileType;
 
-@property (nonatomic,strong) NSString *url;
-
-@property (nonatomic,strong) NSString *videoUrl;
 
 @property (nonatomic,strong) UIImage *image;
 
+@property (nonatomic,strong) NSURL *URL;
+
+@property (nonatomic,strong) NSData *data;
+
+@property (nonatomic,strong) NSArray<UIImage *> *images;
+
+@property (nonatomic,assign) UIViewContentMode contentMode;
 
 @end
 

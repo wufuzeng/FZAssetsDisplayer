@@ -1,15 +1,22 @@
 PODS:
-  - FZFilePreviewer (0.0.1)
+  - FZAVPlayer (0.0.1)
+  - FZFilePreviewer (0.0.1):
+    - FZAVPlayer (~> 0.0.1)
 
 DEPENDENCIES:
   - FZFilePreviewer (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FZAVPlayer
 
 EXTERNAL SOURCES:
   FZFilePreviewer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZFilePreviewer: fa324049bf791643e8519d14fad620299bb79aa1
+  FZAVPlayer: 8d2f8d8713906a12e93206f8a41a5d1fec669132
+  FZFilePreviewer: 80712ce817f5e599c14a890af8e3cf62a60d1d76
 
 PODFILE CHECKSUM: 9de3274fbabd07ebf09d9661bde60f2632e2f3e8
 

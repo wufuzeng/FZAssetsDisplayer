@@ -7,31 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006A3D43C89F87EC22546C895D402751 /* FZFilePreviewVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */; };
-		02366DB4ADBDC46BD2B7F43391F88C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		0554A3B9B825467940C096B456CEB92D /* FZFilePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */; };
-		112DBE31ED6BFB38C19D6AA24D6774A9 /* FZFilePreviewLiveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14E9CCE79AD042B81D5EC2F399740465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		200A6CA06FD77B7B0D83191FBE119330 /* FZFilePreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23F7B7BDBF0CD57BBEAF9F8453258008 /* FZFilePreviewGifCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CA515AD9BB4C94504258725A2456EF5 /* FZFilePreviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CE32C59601BB40AD4EB7D81A15E02BF /* FZFilePreviewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */; };
-		56BD9678C3CD56FED0F4BB41E17BC0D9 /* Pods-FZFilePreviewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B70B9A64DDE6B5888668A6EC48C16A0 /* Pods-FZFilePreviewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AB65480327378DD795ABE83CF4E0602 /* FZFilePreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */; };
+		000B27AF1AAB1B2B29B018708C23ED17 /* UIViewController+FZAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B06B5FA23C85A67D2E30F15FAB17AC /* UIViewController+FZAVPlayer.m */; };
+		02366DB4ADBDC46BD2B7F43391F88C1B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */; };
+		053FB595C73BA6E6C4731BC2A3BD2519 /* FZFilePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4E6DB143000E692C782DFD41535B56 /* FZFilePreviewView.m */; };
+		05E4B1D7ADA66E0526620E5905C317E4 /* FZAVPlayerLightView.h in Headers */ = {isa = PBXBuildFile; fileRef = 244D2AF841E4B865A21D2318A78C7157 /* FZAVPlayerLightView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0780C396D422F26AAC54CAADDF45A1D6 /* FZFilePreviewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D88044A2132E588FA84D444F18AD59 /* FZFilePreviewModel.m */; };
+		0B2B8B3CCFEA239F1C1B51BF19C22F3B /* FZAVPlayerTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 52CE3572D587B5FA080F70003BB11217 /* FZAVPlayerTitleBar.m */; };
+		0F09281C0F621AEAB6E7CB16EBDC940A /* left_back_icon_white_60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 335576221985270E062BDBDA1FA4DA70 /* left_back_icon_white_60x60@3x.png */; };
+		14A75409DCB88DD47E0D1EE30CAA774E /* FZAVPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FEBEFE4B15E751E572F6836705A05D13 /* FZAVPlayer.bundle */; };
+		15EE7AD3BD63C3CF07A02506A546E5A7 /* narrow_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8CEDCA32874FD0719DFCFA32E9A558 /* narrow_btn@2x.png */; };
+		1724E2A5425AFBC7FF25CF2A0D5FB5D8 /* FZFilePreviewPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CD715F938B4910CA07D964569EDF49A /* FZFilePreviewPictureCell.m */; };
+		1B03C2F755F7F3295A078962F0D1A1F8 /* FZFilePreviewSceneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2724385765CA26F97BD8BEFEF2942A21 /* FZFilePreviewSceneCell.m */; };
+		1BDC09C3407AA5817806068D54C61399 /* left_back_icon_white_60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = CD039540ECAECA144975F1E18C444FDC /* left_back_icon_white_60x60.png */; };
+		204B41D4B4FB5D15698E41E401AFB921 /* FZFilePreviewVideoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E8694E3E40D4F33D74F87DECC42D865 /* FZFilePreviewVideoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28CA371C8CC3C477AE4ABB1B17AFC2D4 /* btn_play_again_icon_160x80@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23CAC72A51434250313CDC9402F7C13D /* btn_play_again_icon_160x80@3x.png */; };
+		29D79DDFD0FF3A18BDF5B424C693D579 /* FZVideoPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F947810B133FFF2D1046E14391154F /* FZVideoPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CFEA90F221EF2FECC1ABA61084B5045 /* left_back_icon_white_60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF2106729799C534434F9F1E8BC0B32E /* left_back_icon_white_60x60@2x.png */; };
+		2DFEAB21FC935C8D1A992A50CF6194B9 /* FZFilePreviewVideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B211ACFBCACE7EF1E3762189C5CC9883 /* FZFilePreviewVideoCell.m */; };
+		306E0F2AC7CC2995592254FA30E110FB /* FZGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 458A0027B0F74EA0197501A796160735 /* FZGifImageView.m */; };
+		33FDA5524138A943E3E636A665DEB102 /* FZAVPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C85679B1EA7DB0D6BA1BB9B4893A02E0 /* FZAVPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A816C955E6F1F385B9E9A24B0A9D308 /* FZAVPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = A301843EF03A44FA130C1D659CEED457 /* FZAVPlayerControlView.m */; };
+		3C0676388341C4F5CA56E8065D6D4516 /* FZAVPlayerItem.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB3284B746879959972ECBA0A101839 /* FZAVPlayerItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3E272339B191467027677CFC64F450 /* UINavigationController+FZAVPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F7698007CA631CCD8A28F491A000BBA2 /* UINavigationController+FZAVPlayer.m */; };
+		3EC876889F6BF7D0F8C43D5A84E39641 /* UITabBarController+FZAVPalyer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FCB4663D8848037A516913765CFA94E /* UITabBarController+FZAVPalyer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3EFBBB06411CF452104B9382FBC36A10 /* narrow_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0C6A08FF7058A7B40138880E82DBE5 /* narrow_btn.png */; };
+		42FD86DDA60F51AA6C6310A27B085D03 /* FZFilePreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 496A7F72ACBA2D9271CE7D705D42B559 /* FZFilePreviewView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F24452943A38BFC422A6D5E4108FCD /* FZFilePreviewGifCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AC2B6B1BE068200F30328C784EDAD9E /* FZFilePreviewGifCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A5A57317A4216E3EC3AE815E8DE047 /* FZVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E517F2379A08891E171EEEF1B84FE3 /* FZVideoPlayerView.m */; };
+		4B434CE21E984DB891D48E0880407C18 /* btn_video_play_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07FF0A2E408F7BC413C842E0E556659C /* btn_video_play_90x90@3x.png */; };
+		4CADD448A4E39DA68F0F134B2CC790C7 /* FZGifImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = E2062FB41A1F5E4EAA7F9476533E4965 /* FZGifImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5292A95A6A251A5A5E19D34803C8EB43 /* FZFilePreviewPictureCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C7C88AE33F5F925DC977C32A19B353 /* FZFilePreviewPictureCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57E51FFB4D933F3CE4FDF286C5450CE3 /* FZFilePreviewLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AB348707B56F2AA1124A420632DE2827 /* FZFilePreviewLiveCell.m */; };
+		5DED5308D4C03B1000F5E69548151747 /* UITabBarController+FZAVPalyer.m in Sources */ = {isa = PBXBuildFile; fileRef = C54624D777EED679E2C9C2D29B51C967 /* UITabBarController+FZAVPalyer.m */; };
+		5FAF1A44149C42DA0E05FCF9D7E5BF2E /* FZFilePreviewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F74CDAC70F0A46FF56F1DCF5331153B /* FZFilePreviewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61079A0448693AA71E886E4158049D39 /* Pods-FZFilePreviewer_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6219594878A2CAE881A3D51504C8445E /* Pods-FZFilePreviewer_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F32D5F7B93D173EB722413E40318FCA /* FZFilePreviewGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */; };
-		8A55B902E903F78AF1D6EB092606A2B9 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0D059F8F8A522305ECD58BC276797A /* Pods-FZFilePreviewer_Example-dummy.m */; };
+		614899AB26F233307B9E7E4754CE64E2 /* FZAVPlayerControlView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF2C73EF15374E2149A98A99B621F3B /* FZAVPlayerControlView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		62B1A5FBB18166A93AC350E9DE2D3A2C /* FZFilePreviewLiveCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 6639EF5081D1DEDAABACEA6868C66B2A /* FZFilePreviewLiveCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62C9B06D465D1578F1152B8F52F258A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */; };
+		632F75CADA2187B904F21A667A7B5716 /* btn_play_again_icon_160x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 777B1EA3EEBF3A2CD6EA1445B86EF499 /* btn_play_again_icon_160x80@2x.png */; };
+		6C904C25D50032D333FC674B06F7BB41 /* FZFilePreviewGifCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC3542A0934B8DD50036ADD2333E10A /* FZFilePreviewGifCell.m */; };
+		75618802B6CA33F08733DC991C074278 /* FZAVPlayerTitleBar.h in Headers */ = {isa = PBXBuildFile; fileRef = A88B3A763CFF41170AC031A2EF983ACD /* FZAVPlayerTitleBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		76151B073D9EFA9F42B7066BB02B1472 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */; };
+		7C397570F65FFC2377838D00640E5146 /* video_amplification@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FAEC45FD252DDA1EA4BE4ED67065980 /* video_amplification@3x.png */; };
+		7E406585661C9874A97A914A28CF6463 /* btn_video_play_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C6800383624ABB65F84DA358560D2D5 /* btn_video_play_90x90@2x.png */; };
+		848D12B3040CD0527554DBDBEC2C7878 /* btn_play_again_icon_160x80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B13ADDCFD3204A74A8CFD11DAD7F9E5 /* btn_play_again_icon_160x80.png */; };
+		871AA26AF0A0D23CF6A0A4DB725731A9 /* video_amplification@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B101E321EF5CC4D595C67FFD7B0B81DA /* video_amplification@2x.png */; };
+		877D3E7604C68952235C9BB86D799758 /* FZAVPlayerBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF7D32A3E959940E3E3B96E31D782E3 /* FZAVPlayerBundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8DEF90357FDD7F46EAB26DA76F6B9083 /* Pods-FZFilePreviewer_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DBE064E451CFC98E2571909124172E /* Pods-FZFilePreviewer_Tests-dummy.m */; };
-		9684C622528B72FFE5F3C03729FABCA5 /* FZFilePreviewVideoCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F4C1C75EBB4C896EDC634CFD5F0A14B /* FZFilePreviewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFAA72EC6C2303F2D837BDFAEF245CEE /* FZFilePreviewPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */; };
-		CB06877EF5E294A4A7F4C38FDA99CE9A /* FZFilePreviewLiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */; };
-		CC4E1A5A3397A4C4ECBCC64CD60703A3 /* FZFilePreviewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EB0C24B3A4F249ACFF77E14E420EA7F7 /* FZFilePreviewPictureCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFE00121081D5DE9A7DE22C3C1902FC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8E33008C35FDE85730B6F50041E84254 /* FZAVPlayerVolumeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E733D098C40F2C803D796F92FCFBB34 /* FZAVPlayerVolumeView.m */; };
+		8E7F7B27217A99280732F5FC90CD4B77 /* FZFilePreviewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DF5450C807BDD8E1D85E65B9D4A1DB9 /* FZFilePreviewer-dummy.m */; };
+		8FEEADB59D370D20E9538FD1D27A0F48 /* UINavigationController+FZAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D9BD68AEAF34ACA2DAF069A3E1780E54 /* UINavigationController+FZAVPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		91E02C799644AECEE3100C5257CE4380 /* FZAVPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EB7C26E93C27335489573A7BCE60CB /* FZAVPlayerManager.m */; };
+		9F789B20E3A5A808C5ECD53E5C3F61FB /* FZAVPlayerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 72CD82E7F397C1EF693D88B4F457B1ED /* FZAVPlayerItem.m */; };
+		A5AD3C59CF62486B6CAAAFA0B14152C0 /* FZAVPlayerBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 41EB050071A776FE0B6DA72711F676B7 /* FZAVPlayerBundle.m */; };
+		A5D960F97755DEA0FA6ABBB502EF26C6 /* UIViewController+FZAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A95C891E85FC5876C4C0E260B94D9FE /* UIViewController+FZAVPlayer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ABA893EC14F1CDDED165290119A24C69 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E802D471CB34E7CE71461E63607AB760 /* UIKit.framework */; };
+		AC3FF9DBB27CE33999845260A55092D0 /* FZAVPlayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44FCBED0E6B82CA09D7797A19CBB860A /* FZAVPlayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEE999B94A86844FCA281FEC132DFB9D /* FZAVPlayerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1547AE4C469F49D04A8E7C9F254C01 /* FZAVPlayerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF69CB13A1F843E675480FAAB058CD54 /* FZAVPlayerLightView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB3EC64886875ABF5DFBB5D3B3D3261 /* FZAVPlayerLightView.m */; };
+		B2B6DD9A4CBE172A5DCC32DED5210539 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C0D059F8F8A522305ECD58BC276797A /* Pods-FZFilePreviewer_Example-dummy.m */; };
+		B90652351D692030DDDC7D3F0C80C60D /* FZFilePreviewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 419A5870026C2AA774CBB612EF1149CA /* FZFilePreviewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC3C8E472B955DAB1AD7DF871E64B943 /* icon_dot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C140D13F9C857CFCDAC9D3A397FB427 /* icon_dot@2x.png */; };
+		BC63FDFF459C232EE5E726DF12D321C6 /* FZFilePreviewer.h in Headers */ = {isa = PBXBuildFile; fileRef = A9FD5509AC724FBACB0ED0C00B0940F1 /* FZFilePreviewer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0DDA58EEC0BB90E0AB3C165B8060A35 /* FZFilePreviewSceneCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 304248D33252BFB2DB10AC2924E05DF3 /* FZFilePreviewSceneCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C566CAA79DC7EA06AC52757315522998 /* FZAVPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C89B1F029695CF0DE3E6BB706709793E /* FZAVPlayerView.m */; };
+		C6186D0EEA5D8874B404128E996B37DE /* btn_video_stop_90x90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30517F842E3E827DD4E4E453F1404825 /* btn_video_stop_90x90@2x.png */; };
+		C71432E903E1C73ECA0D17CDE5E833A2 /* FZAVPlayerToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1333A489261C25415193448D8241F27C /* FZAVPlayerToolBar.m */; };
+		C8BC12512A369BDEFF20E405F6D4B5CF /* video_amplification.png in Resources */ = {isa = PBXBuildFile; fileRef = 21301D8036E554560C259D11C6390A1C /* video_amplification.png */; };
+		CBA7431629177AC9835A0527EC730254 /* FZAVPlayerVolumeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 615BB4ED728393579F3EC2EA1F350897 /* FZAVPlayerVolumeView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D4633FFEB9BDEB0C0FAF76B2FFE76DA5 /* icon_dot@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6DC4E50FDC9E6C9D6974DC7E3A03CE /* icon_dot@3x.png */; };
+		D4F141ACAA1FC7771899641FAB1D188E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */; };
+		D885E5FB28721981ABB315326B9FC5BD /* FZAVPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C0739011C9F03E3DCAC8A0A63C290F7 /* FZAVPlayer-dummy.m */; };
+		DC0C9D37B32A8F08F2C83BD932B75FCC /* FZAVPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E993508F2A7D31447F62353E08EEB4 /* FZAVPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E003743EE20B8793A2BF2CB0AFA05EAE /* narrow_btn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 92519CA1F5676A741B28FD938F58F612 /* narrow_btn@3x.png */; };
+		E40CF04D7AEA4F86A9C0E4EB63E5452A /* btn_video_stop_90x90.png in Resources */ = {isa = PBXBuildFile; fileRef = 78B169C1E9E1D4A70E752116AED74F2D /* btn_video_stop_90x90.png */; };
+		E5610AB74B88AE6B8764F6EA19793776 /* icon_dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 17B604B9E84D21A9F0AA99AFDB89CD2D /* icon_dot.png */; };
+		E7BC40F66C5042A4C4ABA0048EECC754 /* FZAVPlayerToolBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 586609A06AB73F6B916EA291C9428030 /* FZAVPlayerToolBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE9AF15B8F97A9E04EAF8811C4BA5FE1 /* FZAVPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7B2F69FDB3D7FAF48D19BE047C7D0B /* FZAVPlayer.framework */; };
+		F1AB060FF52A2809EA5A71497535F913 /* btn_video_play_90x90test.png in Resources */ = {isa = PBXBuildFile; fileRef = 85F5B60775AA7B9120968E88EBFDEEAF /* btn_video_play_90x90test.png */; };
+		F5A42A7BE92D2CA3BB090F00B5A49FD7 /* btn_video_stop_90x90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D01F40A8AEABD81BFB2A8702B4AD0DD /* btn_video_stop_90x90@3x.png */; };
+		FAA8347206F977A775EE062A9AD0FA09 /* Pods-FZFilePreviewer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B70B9A64DDE6B5888668A6EC48C16A0 /* Pods-FZFilePreviewer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		30AD18C32D6F73873D789B5AD0A6231B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E76D13EEE314B50854E143D9000D325;
+			remoteInfo = FZFilePreviewer;
+		};
+		75546E92E45749D3A7A9C904770C86CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D2517ADB8A6BB1D15775A52031B2A7B;
+			remoteInfo = "FZAVPlayer-FZAVPlayer";
+		};
+		802B216D93D6D0BC67F4CD4904361A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C85D919DD0B542E06B986D545496FD9C;
+			remoteInfo = FZAVPlayer;
+		};
 		B2F96D01C559528B44A8FCF1BBC61066 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -39,76 +118,149 @@
 			remoteGlobalIDString = A23146FD6F8561B09A7033584A2F8D85;
 			remoteInfo = "Pods-FZFilePreviewer_Example";
 		};
-		CEFE6C63A05655D9475B68A5EDC7EF64 /* PBXContainerItemProxy */ = {
+		E5B34210F593898E72D79E53B619C061 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2E76D13EEE314B50854E143D9000D325;
-			remoteInfo = FZFilePreviewer;
+			remoteGlobalIDString = C85D919DD0B542E06B986D545496FD9C;
+			remoteInfo = FZAVPlayer;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0051D206BF42959A4DA5F8C98D755918 /* Pods-FZFilePreviewer_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZFilePreviewer_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04A0D3AA5443E22EF59EF0D1AA864C3F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		04C7C88AE33F5F925DC977C32A19B353 /* FZFilePreviewPictureCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewPictureCell.h; sourceTree = "<group>"; };
+		06E993508F2A7D31447F62353E08EEB4 /* FZAVPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayer.h; path = FZAVPlayer/Classes/FZAVPlayer.h; sourceTree = "<group>"; };
+		07FF0A2E408F7BC413C842E0E556659C /* btn_video_play_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@3x.png"; path = "FZAVPlayer/Assets/btn_video_play_90x90@3x.png"; sourceTree = "<group>"; };
+		0C6800383624ABB65F84DA358560D2D5 /* btn_video_play_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_play_90x90@2x.png"; path = "FZAVPlayer/Assets/btn_video_play_90x90@2x.png"; sourceTree = "<group>"; };
+		0E8694E3E40D4F33D74F87DECC42D865 /* FZFilePreviewVideoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewVideoCell.h; sourceTree = "<group>"; };
+		12095C62F26DD841A50DFE90C90C641F /* FZFilePreviewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZFilePreviewer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1333A489261C25415193448D8241F27C /* FZAVPlayerToolBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerToolBar.m; path = FZAVPlayer/Classes/UI/FZAVPlayerToolBar.m; sourceTree = "<group>"; };
+		17B604B9E84D21A9F0AA99AFDB89CD2D /* icon_dot.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = icon_dot.png; path = FZAVPlayer/Assets/icon_dot.png; sourceTree = "<group>"; };
 		1AB23F138ED361132AA7DFA77B20E4AA /* Pods_FZFilePreviewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZFilePreviewer_Tests.framework; path = "Pods-FZFilePreviewer_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6DC4E50FDC9E6C9D6974DC7E3A03CE /* icon_dot@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_dot@3x.png"; path = "FZAVPlayer/Assets/icon_dot@3x.png"; sourceTree = "<group>"; };
+		1F0C6A08FF7058A7B40138880E82DBE5 /* narrow_btn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = narrow_btn.png; path = FZAVPlayer/Assets/narrow_btn.png; sourceTree = "<group>"; };
 		2056621F254F7865801604EEF0795A0C /* Pods-FZFilePreviewer_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		21301D8036E554560C259D11C6390A1C /* video_amplification.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = video_amplification.png; path = FZAVPlayer/Assets/video_amplification.png; sourceTree = "<group>"; };
+		23CAC72A51434250313CDC9402F7C13D /* btn_play_again_icon_160x80@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@3x.png"; path = "FZAVPlayer/Assets/btn_play_again_icon_160x80@3x.png"; sourceTree = "<group>"; };
+		244D2AF841E4B865A21D2318A78C7157 /* FZAVPlayerLightView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerLightView.h; path = FZAVPlayer/Classes/UI/FZAVPlayerLightView.h; sourceTree = "<group>"; };
 		25D51F0D5749DFDC119B77C0C90E15B3 /* FZFilePreviewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZFilePreviewer.framework; path = FZFilePreviewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewVideoCell.h; sourceTree = "<group>"; };
-		30C5874EB1572382547C8AC0B7860321 /* FZFilePreviewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-prefix.pch"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2724385765CA26F97BD8BEFEF2942A21 /* FZFilePreviewSceneCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewSceneCell.m; sourceTree = "<group>"; };
+		29EB7C26E93C27335489573A7BCE60CB /* FZAVPlayerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerManager.m; path = FZAVPlayer/Classes/Core/FZAVPlayerManager.m; sourceTree = "<group>"; };
+		2D01F40A8AEABD81BFB2A8702B4AD0DD /* btn_video_stop_90x90@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@3x.png"; path = "FZAVPlayer/Assets/btn_video_stop_90x90@3x.png"; sourceTree = "<group>"; };
+		2DF5450C807BDD8E1D85E65B9D4A1DB9 /* FZFilePreviewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZFilePreviewer-dummy.m"; sourceTree = "<group>"; };
+		2F4E6DB143000E692C782DFD41535B56 /* FZFilePreviewView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewView.m; sourceTree = "<group>"; };
+		304248D33252BFB2DB10AC2924E05DF3 /* FZFilePreviewSceneCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewSceneCell.h; sourceTree = "<group>"; };
+		30517F842E3E827DD4E4E453F1404825 /* btn_video_stop_90x90@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_video_stop_90x90@2x.png"; path = "FZAVPlayer/Assets/btn_video_stop_90x90@2x.png"; sourceTree = "<group>"; };
+		319F24C2B2F5AB1A1E05045C704C1C3A /* FZAVPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZAVPlayer-Info.plist"; sourceTree = "<group>"; };
 		32F1D3C5D4B8568E5435397CC4A6AF99 /* Pods-FZFilePreviewer_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Example-Info.plist"; sourceTree = "<group>"; };
-		3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewVideoCell.m; sourceTree = "<group>"; };
+		32F7758AB0D32C56F3CF3C1B2B1D52EC /* ResourceBundle-FZAVPlayer-FZAVPlayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FZAVPlayer-FZAVPlayer-Info.plist"; sourceTree = "<group>"; };
+		335576221985270E062BDBDA1FA4DA70 /* left_back_icon_white_60x60@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@3x.png"; path = "FZAVPlayer/Assets/left_back_icon_white_60x60@3x.png"; sourceTree = "<group>"; };
+		33B06B5FA23C85A67D2E30F15FAB17AC /* UIViewController+FZAVPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+FZAVPlayer.m"; path = "FZAVPlayer/Classes/Category/UIViewController+FZAVPlayer.m"; sourceTree = "<group>"; };
+		395EC78391317B0A692623A372E11B82 /* FZAVPlayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZAVPlayer.modulemap; sourceTree = "<group>"; };
+		3A1547AE4C469F49D04A8E7C9F254C01 /* FZAVPlayerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerManager.h; path = FZAVPlayer/Classes/Core/FZAVPlayerManager.h; sourceTree = "<group>"; };
 		3C46D70393B79A001F77C8908D3F1E5B /* Pods-FZFilePreviewer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZFilePreviewer_Example.modulemap"; sourceTree = "<group>"; };
+		3FCB4663D8848037A516913765CFA94E /* UITabBarController+FZAVPalyer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+FZAVPalyer.h"; path = "FZAVPlayer/Classes/Category/UITabBarController+FZAVPalyer.h"; sourceTree = "<group>"; };
+		40902020646D0B38BCE96C52AFFB63A3 /* FZAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FZAVPlayer.framework; path = FZAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		419A5870026C2AA774CBB612EF1149CA /* FZFilePreviewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewModel.h; sourceTree = "<group>"; };
+		41EB050071A776FE0B6DA72711F676B7 /* FZAVPlayerBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerBundle.m; path = FZAVPlayer/Classes/UI/FZAVPlayerBundle.m; sourceTree = "<group>"; };
 		41F5184173A15C51E79328E764A9BBB7 /* Pods-FZFilePreviewer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewView.m; sourceTree = "<group>"; };
+		44FCBED0E6B82CA09D7797A19CBB860A /* FZAVPlayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZAVPlayer-umbrella.h"; sourceTree = "<group>"; };
+		458A0027B0F74EA0197501A796160735 /* FZGifImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZGifImageView.m; sourceTree = "<group>"; };
+		496A7F72ACBA2D9271CE7D705D42B559 /* FZFilePreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewView.h; sourceTree = "<group>"; };
+		4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4B13ADDCFD3204A74A8CFD11DAD7F9E5 /* btn_play_again_icon_160x80.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_play_again_icon_160x80.png; path = FZAVPlayer/Assets/btn_play_again_icon_160x80.png; sourceTree = "<group>"; };
+		4CC3542A0934B8DD50036ADD2333E10A /* FZFilePreviewGifCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewGifCell.m; sourceTree = "<group>"; };
+		52CE3572D587B5FA080F70003BB11217 /* FZAVPlayerTitleBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerTitleBar.m; path = FZAVPlayer/Classes/UI/FZAVPlayerTitleBar.m; sourceTree = "<group>"; };
+		586609A06AB73F6B916EA291C9428030 /* FZAVPlayerToolBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerToolBar.h; path = FZAVPlayer/Classes/UI/FZAVPlayerToolBar.h; sourceTree = "<group>"; };
 		5C0D059F8F8A522305ECD58BC276797A /* Pods-FZFilePreviewer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZFilePreviewer_Example-dummy.m"; sourceTree = "<group>"; };
-		5D4349B89A8C67CD892BF67E7FFF8793 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		5C140D13F9C857CFCDAC9D3A397FB427 /* icon_dot@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "icon_dot@2x.png"; path = "FZAVPlayer/Assets/icon_dot@2x.png"; sourceTree = "<group>"; };
+		5CD715F938B4910CA07D964569EDF49A /* FZFilePreviewPictureCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewPictureCell.m; sourceTree = "<group>"; };
+		5FAEC45FD252DDA1EA4BE4ED67065980 /* video_amplification@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@3x.png"; path = "FZAVPlayer/Assets/video_amplification@3x.png"; sourceTree = "<group>"; };
+		615BB4ED728393579F3EC2EA1F350897 /* FZAVPlayerVolumeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerVolumeView.h; path = FZAVPlayer/Classes/UI/FZAVPlayerVolumeView.h; sourceTree = "<group>"; };
 		6219594878A2CAE881A3D51504C8445E /* Pods-FZFilePreviewer_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZFilePreviewer_Tests-umbrella.h"; sourceTree = "<group>"; };
 		650758A280775A5454005CC47AAE3F68 /* Pods_FZFilePreviewer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FZFilePreviewer_Example.framework; path = "Pods-FZFilePreviewer_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewView.h; sourceTree = "<group>"; };
-		688C18046660864E848628B9C3B1D71B /* FZFilePreviewer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FZFilePreviewer.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6639EF5081D1DEDAABACEA6868C66B2A /* FZFilePreviewLiveCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewLiveCell.h; sourceTree = "<group>"; };
+		6F74CDAC70F0A46FF56F1DCF5331153B /* FZFilePreviewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-umbrella.h"; sourceTree = "<group>"; };
+		72CD82E7F397C1EF693D88B4F457B1ED /* FZAVPlayerItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerItem.m; path = FZAVPlayer/Classes/Core/FZAVPlayerItem.m; sourceTree = "<group>"; };
+		76CBF72D194B404494CCF2ED863E263C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		777B1EA3EEBF3A2CD6EA1445B86EF499 /* btn_play_again_icon_160x80@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "btn_play_again_icon_160x80@2x.png"; path = "FZAVPlayer/Assets/btn_play_again_icon_160x80@2x.png"; sourceTree = "<group>"; };
+		78B169C1E9E1D4A70E752116AED74F2D /* btn_video_stop_90x90.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_stop_90x90.png; path = FZAVPlayer/Assets/btn_video_stop_90x90.png; sourceTree = "<group>"; };
 		7BED6F751D1125EF7A697B50C4D2EB0F /* Pods-FZFilePreviewer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewPictureCell.h; sourceTree = "<group>"; };
-		8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewLiveCell.m; sourceTree = "<group>"; };
 		84E6E555D059B83773F4B1F907A14517 /* Pods-FZFilePreviewer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FZFilePreviewer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewPictureCell.m; sourceTree = "<group>"; };
+		85F5B60775AA7B9120968E88EBFDEEAF /* btn_video_play_90x90test.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = btn_video_play_90x90test.png; path = FZAVPlayer/Assets/btn_video_play_90x90test.png; sourceTree = "<group>"; };
+		8A95C891E85FC5876C4C0E260B94D9FE /* UIViewController+FZAVPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+FZAVPlayer.h"; path = "FZAVPlayer/Classes/Category/UIViewController+FZAVPlayer.h"; sourceTree = "<group>"; };
+		8AC2B6B1BE068200F30328C784EDAD9E /* FZFilePreviewGifCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewGifCell.h; sourceTree = "<group>"; };
+		8AF2C73EF15374E2149A98A99B621F3B /* FZAVPlayerControlView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerControlView.h; path = FZAVPlayer/Classes/UI/FZAVPlayerControlView.h; sourceTree = "<group>"; };
 		8B70B9A64DDE6B5888668A6EC48C16A0 /* Pods-FZFilePreviewer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FZFilePreviewer_Example-umbrella.h"; sourceTree = "<group>"; };
-		9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewGifCell.h; sourceTree = "<group>"; };
+		8C0739011C9F03E3DCAC8A0A63C290F7 /* FZAVPlayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZAVPlayer-dummy.m"; sourceTree = "<group>"; };
+		8E733D098C40F2C803D796F92FCFBB34 /* FZAVPlayerVolumeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerVolumeView.m; path = FZAVPlayer/Classes/UI/FZAVPlayerVolumeView.m; sourceTree = "<group>"; };
+		92519CA1F5676A741B28FD938F58F612 /* narrow_btn@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@3x.png"; path = "FZAVPlayer/Assets/narrow_btn@3x.png"; sourceTree = "<group>"; };
+		95CFA1BAF86831B14470F405BB13B2B2 /* FZFilePreviewer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-prefix.pch"; sourceTree = "<group>"; };
+		96E517F2379A08891E171EEEF1B84FE3 /* FZVideoPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZVideoPlayerView.m; sourceTree = "<group>"; };
 		97DBE064E451CFC98E2571909124172E /* Pods-FZFilePreviewer_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FZFilePreviewer_Tests-dummy.m"; sourceTree = "<group>"; };
-		9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZFilePreviewer.xcconfig; sourceTree = "<group>"; };
 		9CFAC38F02AA757129724364C3464F63 /* Pods-FZFilePreviewer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E413597E50EAE40F4DBEA97D74FE399 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewModel.h; sourceTree = "<group>"; };
-		A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZFilePreviewer.h; path = FZFilePreviewer/Classes/FZFilePreviewer.h; sourceTree = "<group>"; };
-		A3FE2D3CE6EBC0C604048D6FA55913E0 /* FZFilePreviewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZFilePreviewer-Info.plist"; sourceTree = "<group>"; };
-		A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZFilePreviewLiveCell.h; sourceTree = "<group>"; };
-		A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewGifCell.m; sourceTree = "<group>"; };
-		AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewModel.m; sourceTree = "<group>"; };
-		AEAD762D525B3BE35D07D4EDEF78AB3E /* FZFilePreviewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZFilePreviewer.modulemap; sourceTree = "<group>"; };
-		AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FZFilePreviewer-dummy.m"; sourceTree = "<group>"; };
-		BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZFilePreviewer-umbrella.h"; sourceTree = "<group>"; };
+		A301843EF03A44FA130C1D659CEED457 /* FZAVPlayerControlView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerControlView.m; path = FZAVPlayer/Classes/UI/FZAVPlayerControlView.m; sourceTree = "<group>"; };
+		A88B3A763CFF41170AC031A2EF983ACD /* FZAVPlayerTitleBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerTitleBar.h; path = FZAVPlayer/Classes/UI/FZAVPlayerTitleBar.h; sourceTree = "<group>"; };
+		A9FD5509AC724FBACB0ED0C00B0940F1 /* FZFilePreviewer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZFilePreviewer.h; path = FZFilePreviewer/Classes/FZFilePreviewer.h; sourceTree = "<group>"; };
+		AB348707B56F2AA1124A420632DE2827 /* FZFilePreviewLiveCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewLiveCell.m; sourceTree = "<group>"; };
+		AE7B2F69FDB3D7FAF48D19BE047C7D0B /* FZAVPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FZAVPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B101E321EF5CC4D595C67FFD7B0B81DA /* video_amplification@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "video_amplification@2x.png"; path = "FZAVPlayer/Assets/video_amplification@2x.png"; sourceTree = "<group>"; };
+		B211ACFBCACE7EF1E3762189C5CC9883 /* FZFilePreviewVideoCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewVideoCell.m; sourceTree = "<group>"; };
+		B76E718952D957C8D28BE3EF44F59047 /* FZFilePreviewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZFilePreviewer.xcconfig; sourceTree = "<group>"; };
+		BE68ADBA4522A63A9E0D15973DAAAB22 /* FZFilePreviewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FZFilePreviewer.modulemap; sourceTree = "<group>"; };
+		BFB3284B746879959972ECBA0A101839 /* FZAVPlayerItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerItem.h; path = FZAVPlayer/Classes/Core/FZAVPlayerItem.h; sourceTree = "<group>"; };
+		C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FZAVPlayer.xcconfig; sourceTree = "<group>"; };
+		C54624D777EED679E2C9C2D29B51C967 /* UITabBarController+FZAVPalyer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+FZAVPalyer.m"; path = "FZAVPlayer/Classes/Category/UITabBarController+FZAVPalyer.m"; sourceTree = "<group>"; };
+		C85679B1EA7DB0D6BA1BB9B4893A02E0 /* FZAVPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerView.h; path = FZAVPlayer/Classes/UI/FZAVPlayerView.h; sourceTree = "<group>"; };
+		C89B1F029695CF0DE3E6BB706709793E /* FZAVPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerView.m; path = FZAVPlayer/Classes/UI/FZAVPlayerView.m; sourceTree = "<group>"; };
 		CA96D5CB72CAC46554D3DA4A10D90722 /* Pods-FZFilePreviewer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CAF7D32A3E959940E3E3B96E31D782E3 /* FZAVPlayerBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FZAVPlayerBundle.h; path = FZAVPlayer/Classes/UI/FZAVPlayerBundle.h; sourceTree = "<group>"; };
+		CD039540ECAECA144975F1E18C444FDC /* left_back_icon_white_60x60.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = left_back_icon_white_60x60.png; path = FZAVPlayer/Assets/left_back_icon_white_60x60.png; sourceTree = "<group>"; };
+		CD8CEDCA32874FD0719DFCFA32E9A558 /* narrow_btn@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "narrow_btn@2x.png"; path = "FZAVPlayer/Assets/narrow_btn@2x.png"; sourceTree = "<group>"; };
+		CF2106729799C534434F9F1E8BC0B32E /* left_back_icon_white_60x60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "left_back_icon_white_60x60@2x.png"; path = "FZAVPlayer/Assets/left_back_icon_white_60x60@2x.png"; sourceTree = "<group>"; };
+		CFB3EC64886875ABF5DFBB5D3B3D3261 /* FZAVPlayerLightView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FZAVPlayerLightView.m; path = FZAVPlayer/Classes/UI/FZAVPlayerLightView.m; sourceTree = "<group>"; };
+		D9BD68AEAF34ACA2DAF069A3E1780E54 /* UINavigationController+FZAVPlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FZAVPlayer.h"; path = "FZAVPlayer/Classes/Category/UINavigationController+FZAVPlayer.h"; sourceTree = "<group>"; };
+		D9D88044A2132E588FA84D444F18AD59 /* FZFilePreviewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FZFilePreviewModel.m; sourceTree = "<group>"; };
 		DCD0354F29CD79B6FF2AAA7D638E96E4 /* Pods-FZFilePreviewer_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FZFilePreviewer_Tests-Info.plist"; sourceTree = "<group>"; };
+		E2062FB41A1F5E4EAA7F9476533E4965 /* FZGifImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZGifImageView.h; sourceTree = "<group>"; };
+		E7268E8573610DFC0E9D0ABB19A3CD35 /* FZFilePreviewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FZFilePreviewer-Info.plist"; sourceTree = "<group>"; };
+		E802D471CB34E7CE71461E63607AB760 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		ED8EFE3E31D2E5F70128AB77239D3B70 /* Pods-FZFilePreviewer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FZFilePreviewer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EFBE706CCA5EB71C6CCFE053C90C7593 /* FZAVPlayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FZAVPlayer-prefix.pch"; sourceTree = "<group>"; };
 		F6B96E7B59C59B2E61CF500C7A7116F7 /* Pods-FZFilePreviewer_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FZFilePreviewer_Tests.modulemap"; sourceTree = "<group>"; };
+		F7698007CA631CCD8A28F491A000BBA2 /* UINavigationController+FZAVPlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FZAVPlayer.m"; path = "FZAVPlayer/Classes/Category/UINavigationController+FZAVPlayer.m"; sourceTree = "<group>"; };
+		F7F947810B133FFF2D1046E14391154F /* FZVideoPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FZVideoPlayerView.h; sourceTree = "<group>"; };
+		FEBEFE4B15E751E572F6836705A05D13 /* FZAVPlayer.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FZAVPlayer.bundle; path = "FZAVPlayer-FZAVPlayer.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF72D0307056636DE67E3FCDD7637CE /* Pods-FZFilePreviewer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FZFilePreviewer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0DA192AF80CE9521D3A9638DE31AB528 /* Frameworks */ = {
+		250BF82CA62DD875E8A05BFF4B073135 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E9CCE79AD042B81D5EC2F399740465 /* Foundation.framework in Frameworks */,
+				62C9B06D465D1578F1152B8F52F258A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BAEAFD2B494A274DD8E06290C02F85F /* Frameworks */ = {
+		5EAD3FC21EA7F81ADDB48BA058272922 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFE00121081D5DE9A7DE22C3C1902FC3 /* Foundation.framework in Frameworks */,
+				76151B073D9EFA9F42B7066BB02B1472 /* Foundation.framework in Frameworks */,
+				ABA893EC14F1CDDED165290119A24C69 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69AAEB0B0B829E089766E2D03B41FC0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4F141ACAA1FC7771899641FAB1D188E /* Foundation.framework in Frameworks */,
+				EE9AF15B8F97A9E04EAF8811C4BA5FE1 /* FZAVPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,12 +272,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EF792D887A1862DD99939FD92C481977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07795447C299419E27E498D9E2A432F1 /* Products */ = {
+		0A362FD7BF659538073472DBEE804F7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				FEBEFE4B15E751E572F6836705A05D13 /* FZAVPlayer.bundle */,
+				40902020646D0B38BCE96C52AFFB63A3 /* FZAVPlayer.framework */,
 				25D51F0D5749DFDC119B77C0C90E15B3 /* FZFilePreviewer.framework */,
 				650758A280775A5454005CC47AAE3F68 /* Pods_FZFilePreviewer_Example.framework */,
 				1AB23F138ED361132AA7DFA77B20E4AA /* Pods_FZFilePreviewer_Tests.framework */,
@@ -133,45 +294,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1BC72CB5C5AA399D33D9355007B07390 /* Core */ = {
+		0D00B06CF72218D645318FDCA9BA097C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				9384F09D9D95D9712060F7BE220303D7 /* FZFilePreviewGifCell.h */,
-				A9FD328D65F7002DA1FD6697CA7F03F9 /* FZFilePreviewGifCell.m */,
-				A90E14EDD42D0D33B919AB822E8096ED /* FZFilePreviewLiveCell.h */,
-				8447360474C72CBF10DB1590E16DBCFF /* FZFilePreviewLiveCell.m */,
-				83B02A16D3A624F430F9B66FD0BEAA52 /* FZFilePreviewPictureCell.h */,
-				8A6EBD4E7383B2E0431AFF306EC18E3B /* FZFilePreviewPictureCell.m */,
-				2AA29B87822079CF40B33C4FE6AEA33A /* FZFilePreviewVideoCell.h */,
-				3BE05A510FEE6503F8B4F2820BC94500 /* FZFilePreviewVideoCell.m */,
-				6543865ADFD32E3A76B264631A31971F /* FZFilePreviewView.h */,
-				47E23BFDBDD7B103B382D8AE6634B268 /* FZFilePreviewView.m */,
-			);
-			name = Core;
-			path = FZFilePreviewer/Classes/Core;
-			sourceTree = "<group>";
-		};
-		1E8DF02C0792ECE144E8CBB0D86EB914 /* FZFilePreviewer */ = {
-			isa = PBXGroup;
-			children = (
-				A3B4608213CDA0985F26D9D3246F1D5C /* FZFilePreviewer.h */,
-				1BC72CB5C5AA399D33D9355007B07390 /* Core */,
-				8AAB1A2A8C487D9D002657596D666105 /* Model */,
-				3C5679F77C8D284C5DE898DFDA9D7163 /* Pod */,
-				8C7760833542F887005896C2105246C4 /* Support Files */,
-			);
-			name = FZFilePreviewer;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		3C5679F77C8D284C5DE898DFDA9D7163 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				688C18046660864E848628B9C3B1D71B /* FZFilePreviewer.podspec */,
-				5D4349B89A8C67CD892BF67E7FFF8793 /* LICENSE */,
-				9E413597E50EAE40F4DBEA97D74FE399 /* README.md */,
+				12095C62F26DD841A50DFE90C90C641F /* FZFilePreviewer.podspec */,
+				04A0D3AA5443E22EF59EF0D1AA864C3F /* LICENSE */,
+				76CBF72D194B404494CCF2ED863E263C /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		1A7584A68EA13DB02A8BE441C6EEAD7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2062FB41A1F5E4EAA7F9476533E4965 /* FZGifImageView.h */,
+				458A0027B0F74EA0197501A796160735 /* FZGifImageView.m */,
+				F7F947810B133FFF2D1046E14391154F /* FZVideoPlayerView.h */,
+				96E517F2379A08891E171EEEF1B84FE3 /* FZVideoPlayerView.m */,
+			);
+			name = View;
+			path = FZFilePreviewer/Classes/View;
+			sourceTree = "<group>";
+		};
+		2BED08FD24758C23DBBCD1147882D3A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4B0D78963744ED42D1EEC49F6B1FCE0 /* FZAVPlayer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		43C6920D16F567F55281C62B8B8E75C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				419A5870026C2AA774CBB612EF1149CA /* FZFilePreviewModel.h */,
+				D9D88044A2132E588FA84D444F18AD59 /* FZFilePreviewModel.m */,
+			);
+			name = Model;
+			path = FZFilePreviewer/Classes/Model;
 			sourceTree = "<group>";
 		};
 		68169AAC92D80A08180411BA321F0DA1 /* Pods-FZFilePreviewer_Tests */ = {
@@ -190,28 +350,111 @@
 			path = "Target Support Files/Pods-FZFilePreviewer_Tests";
 			sourceTree = "<group>";
 		};
-		8AAB1A2A8C487D9D002657596D666105 /* Model */ = {
+		794BC270FF43568D2AA26410F2548459 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EF72798D79E50B4DC5D3E63BB583D25 /* FZFilePreviewModel.h */,
-				AE12804C38FFFED9553EFA3EA32CA764 /* FZFilePreviewModel.m */,
+				AE7B2F69FDB3D7FAF48D19BE047C7D0B /* FZAVPlayer.framework */,
+				E5A2CC5A6A0835831B37934B1442B5BE /* iOS */,
 			);
-			name = Model;
-			path = FZFilePreviewer/Classes/Model;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8C7760833542F887005896C2105246C4 /* Support Files */ = {
+		7FCE0643DCA261469D0E3CE72548EE54 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEAD762D525B3BE35D07D4EDEF78AB3E /* FZFilePreviewer.modulemap */,
-				9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */,
-				AED2651323F6596D28729CB1083B570B /* FZFilePreviewer-dummy.m */,
-				A3FE2D3CE6EBC0C604048D6FA55913E0 /* FZFilePreviewer-Info.plist */,
-				30C5874EB1572382547C8AC0B7860321 /* FZFilePreviewer-prefix.pch */,
-				BA28A6A8502538DB7C0C29EA037B98AF /* FZFilePreviewer-umbrella.h */,
+				395EC78391317B0A692623A372E11B82 /* FZAVPlayer.modulemap */,
+				C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */,
+				8C0739011C9F03E3DCAC8A0A63C290F7 /* FZAVPlayer-dummy.m */,
+				319F24C2B2F5AB1A1E05045C704C1C3A /* FZAVPlayer-Info.plist */,
+				EFBE706CCA5EB71C6CCFE053C90C7593 /* FZAVPlayer-prefix.pch */,
+				44FCBED0E6B82CA09D7797A19CBB860A /* FZAVPlayer-umbrella.h */,
+				32F7758AB0D32C56F3CF3C1B2B1D52EC /* ResourceBundle-FZAVPlayer-FZAVPlayer-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FZAVPlayer";
+			sourceTree = "<group>";
+		};
+		81AFEDC1A160CF1625D2EC7CCA61330C /* FZFilePreviewer */ = {
+			isa = PBXGroup;
+			children = (
+				A9FD5509AC724FBACB0ED0C00B0940F1 /* FZFilePreviewer.h */,
+				82EC8A257743B1CF0100F71AF63D1961 /* Core */,
+				43C6920D16F567F55281C62B8B8E75C2 /* Model */,
+				0D00B06CF72218D645318FDCA9BA097C /* Pod */,
+				8E8FF4E0286731BAC1C7AFFA707BA4BE /* Support Files */,
+				1A7584A68EA13DB02A8BE441C6EEAD7A /* View */,
+			);
+			name = FZFilePreviewer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		82EC8A257743B1CF0100F71AF63D1961 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8AC2B6B1BE068200F30328C784EDAD9E /* FZFilePreviewGifCell.h */,
+				4CC3542A0934B8DD50036ADD2333E10A /* FZFilePreviewGifCell.m */,
+				6639EF5081D1DEDAABACEA6868C66B2A /* FZFilePreviewLiveCell.h */,
+				AB348707B56F2AA1124A420632DE2827 /* FZFilePreviewLiveCell.m */,
+				04C7C88AE33F5F925DC977C32A19B353 /* FZFilePreviewPictureCell.h */,
+				5CD715F938B4910CA07D964569EDF49A /* FZFilePreviewPictureCell.m */,
+				304248D33252BFB2DB10AC2924E05DF3 /* FZFilePreviewSceneCell.h */,
+				2724385765CA26F97BD8BEFEF2942A21 /* FZFilePreviewSceneCell.m */,
+				0E8694E3E40D4F33D74F87DECC42D865 /* FZFilePreviewVideoCell.h */,
+				B211ACFBCACE7EF1E3762189C5CC9883 /* FZFilePreviewVideoCell.m */,
+				496A7F72ACBA2D9271CE7D705D42B559 /* FZFilePreviewView.h */,
+				2F4E6DB143000E692C782DFD41535B56 /* FZFilePreviewView.m */,
+			);
+			name = Core;
+			path = FZFilePreviewer/Classes/Core;
+			sourceTree = "<group>";
+		};
+		8E8FF4E0286731BAC1C7AFFA707BA4BE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE68ADBA4522A63A9E0D15973DAAAB22 /* FZFilePreviewer.modulemap */,
+				B76E718952D957C8D28BE3EF44F59047 /* FZFilePreviewer.xcconfig */,
+				2DF5450C807BDD8E1D85E65B9D4A1DB9 /* FZFilePreviewer-dummy.m */,
+				E7268E8573610DFC0E9D0ABB19A3CD35 /* FZFilePreviewer-Info.plist */,
+				95CFA1BAF86831B14470F405BB13B2B2 /* FZFilePreviewer-prefix.pch */,
+				6F74CDAC70F0A46FF56F1DCF5331153B /* FZFilePreviewer-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FZFilePreviewer";
+			sourceTree = "<group>";
+		};
+		B4B0D78963744ED42D1EEC49F6B1FCE0 /* FZAVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				06E993508F2A7D31447F62353E08EEB4 /* FZAVPlayer.h */,
+				CAF7D32A3E959940E3E3B96E31D782E3 /* FZAVPlayerBundle.h */,
+				41EB050071A776FE0B6DA72711F676B7 /* FZAVPlayerBundle.m */,
+				8AF2C73EF15374E2149A98A99B621F3B /* FZAVPlayerControlView.h */,
+				A301843EF03A44FA130C1D659CEED457 /* FZAVPlayerControlView.m */,
+				BFB3284B746879959972ECBA0A101839 /* FZAVPlayerItem.h */,
+				72CD82E7F397C1EF693D88B4F457B1ED /* FZAVPlayerItem.m */,
+				244D2AF841E4B865A21D2318A78C7157 /* FZAVPlayerLightView.h */,
+				CFB3EC64886875ABF5DFBB5D3B3D3261 /* FZAVPlayerLightView.m */,
+				3A1547AE4C469F49D04A8E7C9F254C01 /* FZAVPlayerManager.h */,
+				29EB7C26E93C27335489573A7BCE60CB /* FZAVPlayerManager.m */,
+				A88B3A763CFF41170AC031A2EF983ACD /* FZAVPlayerTitleBar.h */,
+				52CE3572D587B5FA080F70003BB11217 /* FZAVPlayerTitleBar.m */,
+				586609A06AB73F6B916EA291C9428030 /* FZAVPlayerToolBar.h */,
+				1333A489261C25415193448D8241F27C /* FZAVPlayerToolBar.m */,
+				C85679B1EA7DB0D6BA1BB9B4893A02E0 /* FZAVPlayerView.h */,
+				C89B1F029695CF0DE3E6BB706709793E /* FZAVPlayerView.m */,
+				615BB4ED728393579F3EC2EA1F350897 /* FZAVPlayerVolumeView.h */,
+				8E733D098C40F2C803D796F92FCFBB34 /* FZAVPlayerVolumeView.m */,
+				D9BD68AEAF34ACA2DAF069A3E1780E54 /* UINavigationController+FZAVPlayer.h */,
+				F7698007CA631CCD8A28F491A000BBA2 /* UINavigationController+FZAVPlayer.m */,
+				3FCB4663D8848037A516913765CFA94E /* UITabBarController+FZAVPalyer.h */,
+				C54624D777EED679E2C9C2D29B51C967 /* UITabBarController+FZAVPalyer.m */,
+				8A95C891E85FC5876C4C0E260B94D9FE /* UIViewController+FZAVPlayer.h */,
+				33B06B5FA23C85A67D2E30F15FAB17AC /* UIViewController+FZAVPlayer.m */,
+				D53AA164BB3FFF2A8151683C157ED6A1 /* Resources */,
+				7FCE0643DCA261469D0E3CE72548EE54 /* Support Files */,
+			);
+			name = FZAVPlayer;
+			path = FZAVPlayer;
 			sourceTree = "<group>";
 		};
 		B75E33F6A35E2E553FDFBC60B902A1EB /* Targets Support Files */ = {
@@ -223,39 +466,61 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BAA1B358C17A225B925DA07D64EDAEDA /* Development Pods */ = {
+		C8A16878D1C16C114B4880E28C9A3C58 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1E8DF02C0792ECE144E8CBB0D86EB914 /* FZFilePreviewer */,
+				81AFEDC1A160CF1625D2EC7CCA61330C /* FZFilePreviewer */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				BAA1B358C17A225B925DA07D64EDAEDA /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				07795447C299419E27E498D9E2A432F1 /* Products */,
+				C8A16878D1C16C114B4880E28C9A3C58 /* Development Pods */,
+				794BC270FF43568D2AA26410F2548459 /* Frameworks */,
+				2BED08FD24758C23DBBCD1147882D3A2 /* Pods */,
+				0A362FD7BF659538073472DBEE804F7E /* Products */,
 				B75E33F6A35E2E553FDFBC60B902A1EB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D53AA164BB3FFF2A8151683C157ED6A1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				4B13ADDCFD3204A74A8CFD11DAD7F9E5 /* btn_play_again_icon_160x80.png */,
+				777B1EA3EEBF3A2CD6EA1445B86EF499 /* btn_play_again_icon_160x80@2x.png */,
+				23CAC72A51434250313CDC9402F7C13D /* btn_play_again_icon_160x80@3x.png */,
+				0C6800383624ABB65F84DA358560D2D5 /* btn_video_play_90x90@2x.png */,
+				07FF0A2E408F7BC413C842E0E556659C /* btn_video_play_90x90@3x.png */,
+				85F5B60775AA7B9120968E88EBFDEEAF /* btn_video_play_90x90test.png */,
+				78B169C1E9E1D4A70E752116AED74F2D /* btn_video_stop_90x90.png */,
+				30517F842E3E827DD4E4E453F1404825 /* btn_video_stop_90x90@2x.png */,
+				2D01F40A8AEABD81BFB2A8702B4AD0DD /* btn_video_stop_90x90@3x.png */,
+				17B604B9E84D21A9F0AA99AFDB89CD2D /* icon_dot.png */,
+				5C140D13F9C857CFCDAC9D3A397FB427 /* icon_dot@2x.png */,
+				1D6DC4E50FDC9E6C9D6974DC7E3A03CE /* icon_dot@3x.png */,
+				CD039540ECAECA144975F1E18C444FDC /* left_back_icon_white_60x60.png */,
+				CF2106729799C534434F9F1E8BC0B32E /* left_back_icon_white_60x60@2x.png */,
+				335576221985270E062BDBDA1FA4DA70 /* left_back_icon_white_60x60@3x.png */,
+				1F0C6A08FF7058A7B40138880E82DBE5 /* narrow_btn.png */,
+				CD8CEDCA32874FD0719DFCFA32E9A558 /* narrow_btn@2x.png */,
+				92519CA1F5676A741B28FD938F58F612 /* narrow_btn@3x.png */,
+				21301D8036E554560C259D11C6390A1C /* video_amplification.png */,
+				B101E321EF5CC4D595C67FFD7B0B81DA /* video_amplification@2x.png */,
+				5FAEC45FD252DDA1EA4BE4ED67065980 /* video_amplification@3x.png */,
 			);
-			name = Frameworks;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E5A2CC5A6A0835831B37934B1442B5BE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A27B5878F2F6F89928C1AD3BA845C41 /* Foundation.framework */,
+				E802D471CB34E7CE71461E63607AB760 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		E72E38671B7B3A4EA58D06DC0DA24F08 /* Pods-FZFilePreviewer_Example */ = {
@@ -286,26 +551,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		419F84B73A14CD47D1278CD151C35CF5 /* Headers */ = {
+		59292543DE33A12141C32BECCDD6D4B2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56BD9678C3CD56FED0F4BB41E17BC0D9 /* Pods-FZFilePreviewer_Example-umbrella.h in Headers */,
+				AC3FF9DBB27CE33999845260A55092D0 /* FZAVPlayer-umbrella.h in Headers */,
+				DC0C9D37B32A8F08F2C83BD932B75FCC /* FZAVPlayer.h in Headers */,
+				877D3E7604C68952235C9BB86D799758 /* FZAVPlayerBundle.h in Headers */,
+				614899AB26F233307B9E7E4754CE64E2 /* FZAVPlayerControlView.h in Headers */,
+				3C0676388341C4F5CA56E8065D6D4516 /* FZAVPlayerItem.h in Headers */,
+				05E4B1D7ADA66E0526620E5905C317E4 /* FZAVPlayerLightView.h in Headers */,
+				AEE999B94A86844FCA281FEC132DFB9D /* FZAVPlayerManager.h in Headers */,
+				75618802B6CA33F08733DC991C074278 /* FZAVPlayerTitleBar.h in Headers */,
+				E7BC40F66C5042A4C4ABA0048EECC754 /* FZAVPlayerToolBar.h in Headers */,
+				33FDA5524138A943E3E636A665DEB102 /* FZAVPlayerView.h in Headers */,
+				CBA7431629177AC9835A0527EC730254 /* FZAVPlayerVolumeView.h in Headers */,
+				8FEEADB59D370D20E9538FD1D27A0F48 /* UINavigationController+FZAVPlayer.h in Headers */,
+				3EC876889F6BF7D0F8C43D5A84E39641 /* UITabBarController+FZAVPalyer.h in Headers */,
+				A5D960F97755DEA0FA6ABBB502EF26C6 /* UIViewController+FZAVPlayer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74DC0E85343B231B832784EF6076E5F1 /* Headers */ = {
+		9980A9D26AE1FDF5B810E5062E6B1399 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F4C1C75EBB4C896EDC634CFD5F0A14B /* FZFilePreviewer-umbrella.h in Headers */,
-				2CA515AD9BB4C94504258725A2456EF5 /* FZFilePreviewer.h in Headers */,
-				23F7B7BDBF0CD57BBEAF9F8453258008 /* FZFilePreviewGifCell.h in Headers */,
-				112DBE31ED6BFB38C19D6AA24D6774A9 /* FZFilePreviewLiveCell.h in Headers */,
-				CC4E1A5A3397A4C4ECBCC64CD60703A3 /* FZFilePreviewModel.h in Headers */,
-				EB0C24B3A4F249ACFF77E14E420EA7F7 /* FZFilePreviewPictureCell.h in Headers */,
-				9684C622528B72FFE5F3C03729FABCA5 /* FZFilePreviewVideoCell.h in Headers */,
-				200A6CA06FD77B7B0D83191FBE119330 /* FZFilePreviewView.h in Headers */,
+				FAA8347206F977A775EE062A9AD0FA09 /* Pods-FZFilePreviewer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA32714C32B988005E732AD61C17228A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FAF1A44149C42DA0E05FCF9D7E5BF2E /* FZFilePreviewer-umbrella.h in Headers */,
+				BC63FDFF459C232EE5E726DF12D321C6 /* FZFilePreviewer.h in Headers */,
+				43F24452943A38BFC422A6D5E4108FCD /* FZFilePreviewGifCell.h in Headers */,
+				62B1A5FBB18166A93AC350E9DE2D3A2C /* FZFilePreviewLiveCell.h in Headers */,
+				B90652351D692030DDDC7D3F0C80C60D /* FZFilePreviewModel.h in Headers */,
+				5292A95A6A251A5A5E19D34803C8EB43 /* FZFilePreviewPictureCell.h in Headers */,
+				C0DDA58EEC0BB90E0AB3C165B8060A35 /* FZFilePreviewSceneCell.h in Headers */,
+				204B41D4B4FB5D15698E41E401AFB921 /* FZFilePreviewVideoCell.h in Headers */,
+				42FD86DDA60F51AA6C6310A27B085D03 /* FZFilePreviewView.h in Headers */,
+				4CADD448A4E39DA68F0F134B2CC790C7 /* FZGifImageView.h in Headers */,
+				29D79DDFD0FF3A18BDF5B424C693D579 /* FZVideoPlayerView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,39 +603,77 @@
 /* Begin PBXNativeTarget section */
 		2E76D13EEE314B50854E143D9000D325 /* FZFilePreviewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 545616F688A933F7704351888FA8F1B0 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */;
+			buildConfigurationList = 51A521C3180812A04438DC556DABBECA /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */;
 			buildPhases = (
-				74DC0E85343B231B832784EF6076E5F1 /* Headers */,
-				20F7B21F811D66D981045D27A6B2D4FD /* Sources */,
-				0DA192AF80CE9521D3A9638DE31AB528 /* Frameworks */,
-				F3EF6498B125E481067D5BE8BBB9A9F2 /* Resources */,
+				EA32714C32B988005E732AD61C17228A /* Headers */,
+				9E0B7299B4C231D83A5DD6F1E9A3B1E6 /* Sources */,
+				69AAEB0B0B829E089766E2D03B41FC0A /* Frameworks */,
+				FFA2DFD487317A0BC62A0830DE4309C6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FAB782EFF866978B0803F01499CB35C2 /* PBXTargetDependency */,
 			);
 			name = FZFilePreviewer;
 			productName = FZFilePreviewer;
 			productReference = 25D51F0D5749DFDC119B77C0C90E15B3 /* FZFilePreviewer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A23146FD6F8561B09A7033584A2F8D85 /* Pods-FZFilePreviewer_Example */ = {
+		3D2517ADB8A6BB1D15775A52031B2A7B /* FZAVPlayer-FZAVPlayer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 404E99FAF51784CFC721F335F465C216 /* Build configuration list for PBXNativeTarget "Pods-FZFilePreviewer_Example" */;
+			buildConfigurationList = B02BE2F91180732B030558A2D3A691AF /* Build configuration list for PBXNativeTarget "FZAVPlayer-FZAVPlayer" */;
 			buildPhases = (
-				419F84B73A14CD47D1278CD151C35CF5 /* Headers */,
-				863564A99D0C38AF8075A5DAFB51B35A /* Sources */,
-				2BAEAFD2B494A274DD8E06290C02F85F /* Frameworks */,
-				7F8E424A254D0931FB1C031A4C7B8DFA /* Resources */,
+				888C636902A6E3F2F9C822A2507D40FD /* Sources */,
+				EF792D887A1862DD99939FD92C481977 /* Frameworks */,
+				F411C884533372860EB53BE09CF82CA7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6B0B033549149E30C58D46E4F9328327 /* PBXTargetDependency */,
+			);
+			name = "FZAVPlayer-FZAVPlayer";
+			productName = "FZAVPlayer-FZAVPlayer";
+			productReference = FEBEFE4B15E751E572F6836705A05D13 /* FZAVPlayer.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		A23146FD6F8561B09A7033584A2F8D85 /* Pods-FZFilePreviewer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2462A1C54E76DF82542679DC2DB08BA /* Build configuration list for PBXNativeTarget "Pods-FZFilePreviewer_Example" */;
+			buildPhases = (
+				9980A9D26AE1FDF5B810E5062E6B1399 /* Headers */,
+				0091384C89CC7D33477B18E57400CAB3 /* Sources */,
+				250BF82CA62DD875E8A05BFF4B073135 /* Frameworks */,
+				C64EB188012FDE88A84FB927E8AB40C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F771A29B2DCB2CC97B2E27EE147FE531 /* PBXTargetDependency */,
+				990207ED6CCB4B3933DEC2509B1F9C93 /* PBXTargetDependency */,
 			);
 			name = "Pods-FZFilePreviewer_Example";
 			productName = "Pods-FZFilePreviewer_Example";
 			productReference = 650758A280775A5454005CC47AAE3F68 /* Pods_FZFilePreviewer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C85D919DD0B542E06B986D545496FD9C /* FZAVPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C08106C7490A2B9F1B75A15F47255F33 /* Build configuration list for PBXNativeTarget "FZAVPlayer" */;
+			buildPhases = (
+				59292543DE33A12141C32BECCDD6D4B2 /* Headers */,
+				DA15A88AE046EAE82793F0E7C789E5FC /* Sources */,
+				5EAD3FC21EA7F81ADDB48BA058272922 /* Frameworks */,
+				625295401A8A537B39581AF93EC025CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D08AE32E438160EB46B5668608E6377 /* PBXTargetDependency */,
+			);
+			name = FZAVPlayer;
+			productName = FZAVPlayer;
+			productReference = 40902020646D0B38BCE96C52AFFB63A3 /* FZAVPlayer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9EAE0A54DAD103544E972356FC490A8 /* Pods-FZFilePreviewer_Tests */ = {
@@ -385,10 +712,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 07795447C299419E27E498D9E2A432F1 /* Products */;
+			productRefGroup = 0A362FD7BF659538073472DBEE804F7E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				C85D919DD0B542E06B986D545496FD9C /* FZAVPlayer */,
+				3D2517ADB8A6BB1D15775A52031B2A7B /* FZAVPlayer-FZAVPlayer */,
 				2E76D13EEE314B50854E143D9000D325 /* FZFilePreviewer */,
 				A23146FD6F8561B09A7033584A2F8D85 /* Pods-FZFilePreviewer_Example */,
 				E9EAE0A54DAD103544E972356FC490A8 /* Pods-FZFilePreviewer_Tests */,
@@ -397,10 +726,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7F8E424A254D0931FB1C031A4C7B8DFA /* Resources */ = {
+		625295401A8A537B39581AF93EC025CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A75409DCB88DD47E0D1EE30CAA774E /* FZAVPlayer.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +741,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3EF6498B125E481067D5BE8BBB9A9F2 /* Resources */ = {
+		C64EB188012FDE88A84FB927E8AB40C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F411C884533372860EB53BE09CF82CA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848D12B3040CD0527554DBDBEC2C7878 /* btn_play_again_icon_160x80.png in Resources */,
+				632F75CADA2187B904F21A667A7B5716 /* btn_play_again_icon_160x80@2x.png in Resources */,
+				28CA371C8CC3C477AE4ABB1B17AFC2D4 /* btn_play_again_icon_160x80@3x.png in Resources */,
+				7E406585661C9874A97A914A28CF6463 /* btn_video_play_90x90@2x.png in Resources */,
+				4B434CE21E984DB891D48E0880407C18 /* btn_video_play_90x90@3x.png in Resources */,
+				F1AB060FF52A2809EA5A71497535F913 /* btn_video_play_90x90test.png in Resources */,
+				E40CF04D7AEA4F86A9C0E4EB63E5452A /* btn_video_stop_90x90.png in Resources */,
+				C6186D0EEA5D8874B404128E996B37DE /* btn_video_stop_90x90@2x.png in Resources */,
+				F5A42A7BE92D2CA3BB090F00B5A49FD7 /* btn_video_stop_90x90@3x.png in Resources */,
+				E5610AB74B88AE6B8764F6EA19793776 /* icon_dot.png in Resources */,
+				BC3C8E472B955DAB1AD7DF871E64B943 /* icon_dot@2x.png in Resources */,
+				D4633FFEB9BDEB0C0FAF76B2FFE76DA5 /* icon_dot@3x.png in Resources */,
+				1BDC09C3407AA5817806068D54C61399 /* left_back_icon_white_60x60.png in Resources */,
+				2CFEA90F221EF2FECC1ABA61084B5045 /* left_back_icon_white_60x60@2x.png in Resources */,
+				0F09281C0F621AEAB6E7CB16EBDC940A /* left_back_icon_white_60x60@3x.png in Resources */,
+				3EFBBB06411CF452104B9382FBC36A10 /* narrow_btn.png in Resources */,
+				15EE7AD3BD63C3CF07A02506A546E5A7 /* narrow_btn@2x.png in Resources */,
+				E003743EE20B8793A2BF2CB0AFA05EAE /* narrow_btn@3x.png in Resources */,
+				C8BC12512A369BDEFF20E405F6D4B5CF /* video_amplification.png in Resources */,
+				871AA26AF0A0D23CF6A0A4DB725731A9 /* video_amplification@2x.png in Resources */,
+				7C397570F65FFC2377838D00640E5146 /* video_amplification@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFA2DFD487317A0BC62A0830DE4309C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,6 +786,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0091384C89CC7D33477B18E57400CAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B6DD9A4CBE172A5DCC32DED5210539 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07A35AB493EF9D442D5B8A8826A995A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,47 +802,119 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20F7B21F811D66D981045D27A6B2D4FD /* Sources */ = {
+		888C636902A6E3F2F9C822A2507D40FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CE32C59601BB40AD4EB7D81A15E02BF /* FZFilePreviewer-dummy.m in Sources */,
-				7F32D5F7B93D173EB722413E40318FCA /* FZFilePreviewGifCell.m in Sources */,
-				CB06877EF5E294A4A7F4C38FDA99CE9A /* FZFilePreviewLiveCell.m in Sources */,
-				5AB65480327378DD795ABE83CF4E0602 /* FZFilePreviewModel.m in Sources */,
-				AFAA72EC6C2303F2D837BDFAEF245CEE /* FZFilePreviewPictureCell.m in Sources */,
-				006A3D43C89F87EC22546C895D402751 /* FZFilePreviewVideoCell.m in Sources */,
-				0554A3B9B825467940C096B456CEB92D /* FZFilePreviewView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		863564A99D0C38AF8075A5DAFB51B35A /* Sources */ = {
+		9E0B7299B4C231D83A5DD6F1E9A3B1E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A55B902E903F78AF1D6EB092606A2B9 /* Pods-FZFilePreviewer_Example-dummy.m in Sources */,
+				8E7F7B27217A99280732F5FC90CD4B77 /* FZFilePreviewer-dummy.m in Sources */,
+				6C904C25D50032D333FC674B06F7BB41 /* FZFilePreviewGifCell.m in Sources */,
+				57E51FFB4D933F3CE4FDF286C5450CE3 /* FZFilePreviewLiveCell.m in Sources */,
+				0780C396D422F26AAC54CAADDF45A1D6 /* FZFilePreviewModel.m in Sources */,
+				1724E2A5425AFBC7FF25CF2A0D5FB5D8 /* FZFilePreviewPictureCell.m in Sources */,
+				1B03C2F755F7F3295A078962F0D1A1F8 /* FZFilePreviewSceneCell.m in Sources */,
+				2DFEAB21FC935C8D1A992A50CF6194B9 /* FZFilePreviewVideoCell.m in Sources */,
+				053FB595C73BA6E6C4731BC2A3BD2519 /* FZFilePreviewView.m in Sources */,
+				306E0F2AC7CC2995592254FA30E110FB /* FZGifImageView.m in Sources */,
+				44A5A57317A4216E3EC3AE815E8DE047 /* FZVideoPlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA15A88AE046EAE82793F0E7C789E5FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D885E5FB28721981ABB315326B9FC5BD /* FZAVPlayer-dummy.m in Sources */,
+				A5AD3C59CF62486B6CAAAFA0B14152C0 /* FZAVPlayerBundle.m in Sources */,
+				3A816C955E6F1F385B9E9A24B0A9D308 /* FZAVPlayerControlView.m in Sources */,
+				9F789B20E3A5A808C5ECD53E5C3F61FB /* FZAVPlayerItem.m in Sources */,
+				AF69CB13A1F843E675480FAAB058CD54 /* FZAVPlayerLightView.m in Sources */,
+				91E02C799644AECEE3100C5257CE4380 /* FZAVPlayerManager.m in Sources */,
+				0B2B8B3CCFEA239F1C1B51BF19C22F3B /* FZAVPlayerTitleBar.m in Sources */,
+				C71432E903E1C73ECA0D17CDE5E833A2 /* FZAVPlayerToolBar.m in Sources */,
+				C566CAA79DC7EA06AC52757315522998 /* FZAVPlayerView.m in Sources */,
+				8E33008C35FDE85730B6F50041E84254 /* FZAVPlayerVolumeView.m in Sources */,
+				3C3E272339B191467027677CFC64F450 /* UINavigationController+FZAVPlayer.m in Sources */,
+				5DED5308D4C03B1000F5E69548151747 /* UITabBarController+FZAVPalyer.m in Sources */,
+				000B27AF1AAB1B2B29B018708C23ED17 /* UIViewController+FZAVPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6B0B033549149E30C58D46E4F9328327 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FZFilePreviewer;
-			target = 2E76D13EEE314B50854E143D9000D325 /* FZFilePreviewer */;
-			targetProxy = CEFE6C63A05655D9475B68A5EDC7EF64 /* PBXContainerItemProxy */;
-		};
 		6C6355EB19AD30D9369849E7B9815E30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FZFilePreviewer_Example";
 			target = A23146FD6F8561B09A7033584A2F8D85 /* Pods-FZFilePreviewer_Example */;
 			targetProxy = B2F96D01C559528B44A8FCF1BBC61066 /* PBXContainerItemProxy */;
 		};
+		7D08AE32E438160EB46B5668608E6377 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FZAVPlayer-FZAVPlayer";
+			target = 3D2517ADB8A6BB1D15775A52031B2A7B /* FZAVPlayer-FZAVPlayer */;
+			targetProxy = 75546E92E45749D3A7A9C904770C86CF /* PBXContainerItemProxy */;
+		};
+		990207ED6CCB4B3933DEC2509B1F9C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FZFilePreviewer;
+			target = 2E76D13EEE314B50854E143D9000D325 /* FZFilePreviewer */;
+			targetProxy = 30AD18C32D6F73873D789B5AD0A6231B /* PBXContainerItemProxy */;
+		};
+		F771A29B2DCB2CC97B2E27EE147FE531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FZAVPlayer;
+			target = C85D919DD0B542E06B986D545496FD9C /* FZAVPlayer */;
+			targetProxy = E5B34210F593898E72D79E53B619C061 /* PBXContainerItemProxy */;
+		};
+		FAB782EFF866978B0803F01499CB35C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FZAVPlayer;
+			target = C85D919DD0B542E06B986D545496FD9C /* FZAVPlayer */;
+			targetProxy = 802B216D93D6D0BC67F4CD4904361A0A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2DBDC7DB8E879B8AD99D5A547156AC81 /* Release */ = {
+		0EE29BA89F532914B8D1CB5465315E02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76E718952D957C8D28BE3EF44F59047 /* FZFilePreviewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
+				PRODUCT_MODULE_NAME = FZFilePreviewer;
+				PRODUCT_NAME = FZFilePreviewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0EE4C044C4BFA8970BA438DE4736245C /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA96D5CB72CAC46554D3DA4A10D90722 /* Pods-FZFilePreviewer_Example.release.xcconfig */;
 			buildSettings = {
@@ -502,6 +947,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		226C487495773963D27CBA8CAF27992E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZAVPlayer/FZAVPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZAVPlayer/FZAVPlayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZAVPlayer/FZAVPlayer.modulemap";
+				PRODUCT_MODULE_NAME = FZAVPlayer;
+				PRODUCT_NAME = FZAVPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -661,6 +1137,37 @@
 			};
 			name = Debug;
 		};
+		96CB2FD8ECBB2357A9A0BF7DFA90D7C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B76E718952D957C8D28BE3EF44F59047 /* FZFilePreviewer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
+				PRODUCT_MODULE_NAME = FZFilePreviewer;
+				PRODUCT_NAME = FZFilePreviewer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		987A69CA7FA63709F4F60FCE7B18BFFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BED6F751D1125EF7A697B50C4D2EB0F /* Pods-FZFilePreviewer_Tests.debug.xcconfig */;
@@ -694,7 +1201,7 @@
 			};
 			name = Debug;
 		};
-		9959D721CFC58C68D9E567AC778A43B8 /* Debug */ = {
+		9EB09CBF982AA7BF0CFF1CB40ED46AC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FEF72D0307056636DE67E3FCDD7637CE /* Pods-FZFilePreviewer_Example.debug.xcconfig */;
 			buildSettings = {
@@ -727,9 +1234,9 @@
 			};
 			name = Debug;
 		};
-		ACFD8EDE74279ECE749D7973FEC9CD7A /* Debug */ = {
+		A969C8EC736EAFD8D03E67CB88A82990 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */;
+			baseConfigurationReference = C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -740,45 +1247,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FZAVPlayer/FZAVPlayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FZAVPlayer/FZAVPlayer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
-				PRODUCT_MODULE_NAME = FZFilePreviewer;
-				PRODUCT_NAME = FZFilePreviewer;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B025E616D2460EC34B9E7E076AF976E7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9BD4DB78E27349045731B86B79303BB4 /* FZFilePreviewer.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FZFilePreviewer/FZFilePreviewer-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FZFilePreviewer/FZFilePreviewer.modulemap";
-				PRODUCT_MODULE_NAME = FZFilePreviewer;
-				PRODUCT_NAME = FZFilePreviewer;
+				MODULEMAP_FILE = "Target Support Files/FZAVPlayer/FZAVPlayer.modulemap";
+				PRODUCT_MODULE_NAME = FZAVPlayer;
+				PRODUCT_NAME = FZAVPlayer;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -789,6 +1265,38 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E1095B533E626D7A5313AB7E561E9341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FZAVPlayer";
+				INFOPLIST_FILE = "Target Support Files/FZAVPlayer/ResourceBundle-FZAVPlayer-FZAVPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FZAVPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F8EEF9CBC0FA201D57FAB6A9E7E63EB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C123B7485A822FB4E23D5E06D5CBA32E /* FZAVPlayer.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/FZAVPlayer";
+				INFOPLIST_FILE = "Target Support Files/FZAVPlayer/ResourceBundle-FZAVPlayer-FZAVPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = FZAVPlayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -802,15 +1310,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		404E99FAF51784CFC721F335F465C216 /* Build configuration list for PBXNativeTarget "Pods-FZFilePreviewer_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9959D721CFC58C68D9E567AC778A43B8 /* Debug */,
-				2DBDC7DB8E879B8AD99D5A547156AC81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -820,11 +1319,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		545616F688A933F7704351888FA8F1B0 /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */ = {
+		51A521C3180812A04438DC556DABBECA /* Build configuration list for PBXNativeTarget "FZFilePreviewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ACFD8EDE74279ECE749D7973FEC9CD7A /* Debug */,
-				B025E616D2460EC34B9E7E076AF976E7 /* Release */,
+				96CB2FD8ECBB2357A9A0BF7DFA90D7C9 /* Debug */,
+				0EE29BA89F532914B8D1CB5465315E02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B02BE2F91180732B030558A2D3A691AF /* Build configuration list for PBXNativeTarget "FZAVPlayer-FZAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8EEF9CBC0FA201D57FAB6A9E7E63EB3 /* Debug */,
+				E1095B533E626D7A5313AB7E561E9341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C08106C7490A2B9F1B75A15F47255F33 /* Build configuration list for PBXNativeTarget "FZAVPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				226C487495773963D27CBA8CAF27992E /* Debug */,
+				A969C8EC736EAFD8D03E67CB88A82990 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2462A1C54E76DF82542679DC2DB08BA /* Build configuration list for PBXNativeTarget "Pods-FZFilePreviewer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB09CBF982AA7BF0CFF1CB40ED46AC7 /* Debug */,
+				0EE4C044C4BFA8970BA438DE4736245C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

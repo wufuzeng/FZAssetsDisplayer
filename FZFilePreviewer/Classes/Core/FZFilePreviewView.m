@@ -9,8 +9,10 @@
 
 #import "FZFilePreviewPictureCell.h"
 #import "FZFilePreviewGifCell.h"
-#import "FZFilePreviewVideoCell.h"
+#import "FZFilePreviewSceneCell.h"
 #import "FZFilePreviewLiveCell.h"
+#import "FZFilePreviewVideoCell.h"
+
 
 @interface FZFilePreviewView ()
 <
@@ -28,7 +30,8 @@ UICollectionViewDataSource
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        self.collectionView.frame = frame;
+        CGRect nFrame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
+        self.collectionView.frame = nFrame;
         [self setupViews];
     }
     return self;
@@ -75,7 +78,12 @@ UICollectionViewDataSource
         return cell;
     } else if (model.fileType == FZFilePreviewTypeGif) {
         FZFilePreviewGifCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewGifCell class]) forIndexPath:indexPath];
-        
+        cell.gifImageView.image = model.image;
+        cell.gifImageView.data = model.data;
+        return cell;
+    } else if (model.fileType == FZFilePreviewTypeScene) {
+        FZFilePreviewSceneCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewSceneCell class]) forIndexPath:indexPath];
+        cell.images = model.images;
         
         return cell;
     } else if (model.fileType == FZFilePreviewTypeLive) {
@@ -85,13 +93,42 @@ UICollectionViewDataSource
     } else if (model.fileType == FZFilePreviewTypeVideo) {
         FZFilePreviewVideoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewVideoCell class]) forIndexPath:indexPath];
         
-        
+        cell.URL = model.URL;
+        //[cell stopPlay];
         return cell;
     } else   {
         FZFilePreviewVideoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewVideoCell class]) forIndexPath:indexPath];
         
         
         return cell;
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);{
+    FZFilePreviewModel *model = self.files[indexPath.row];
+    if (model.fileType == FZFilePreviewTypeScene){
+        FZFilePreviewSceneCell * CELL = (FZFilePreviewSceneCell*)cell;
+        [CELL startWaggle];
+    } else if (model.fileType == FZFilePreviewTypeGif) {
+        FZFilePreviewGifCell * CELL = (FZFilePreviewGifCell *)cell;
+        [CELL.gifImageView startAnimating];
+    } else if (model.fileType == FZFilePreviewTypeVideo) {
+        FZFilePreviewVideoCell * CELL = (FZFilePreviewVideoCell *)cell;
+        [CELL startPlay];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);{
+    FZFilePreviewModel *model = self.files[indexPath.row];
+    if (model.fileType == FZFilePreviewTypeScene){
+        FZFilePreviewSceneCell * CELL = (FZFilePreviewSceneCell*)cell;
+        [CELL stopWaggle];
+    } else if (model.fileType == FZFilePreviewTypeGif) {
+        FZFilePreviewGifCell * CELL = (FZFilePreviewGifCell *)cell;
+        [CELL.gifImageView stopGifAnimating];
+    } else if (model.fileType == FZFilePreviewTypeVideo) {
+        FZFilePreviewVideoCell * CELL = (FZFilePreviewVideoCell *)cell;
+        [CELL stopPlay];
     }
 }
 
@@ -108,10 +145,10 @@ UICollectionViewDataSource
     return UIEdgeInsetsZero;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
-    return  3;//0.000001f;
+    return  0.000001f;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
-    return  3;//0.000001f;
+    return  0.000001f;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
@@ -143,8 +180,8 @@ UICollectionViewDataSource
         _collectionView.backgroundColor = [UIColor whiteColor];
  
         [_collectionView registerClass:[FZFilePreviewPictureCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewPictureCell class])];
-        
         [_collectionView registerClass:[FZFilePreviewGifCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewGifCell class])];
+        [_collectionView registerClass:[FZFilePreviewSceneCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewSceneCell class])];
         [_collectionView registerClass:[FZFilePreviewLiveCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewLiveCell class])];
         [_collectionView registerClass:[FZFilePreviewVideoCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewVideoCell class])];
         [self addSubview:_collectionView];
