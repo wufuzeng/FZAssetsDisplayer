@@ -36,14 +36,41 @@
 }
 
 -(void)startPlay{
-    [self.playerView playWithUrl:self.URL];
+    
+    [self.playerView resume];
     
 }
 
 -(void)stopPlay{
-    [self.playerView stop];
+    [self.playerView pause];
 }
 
+
+#pragma mark -- Set,Get Func ---
+
+-(void)setUrl:(NSString *)url {
+    _url = url;
+    if (url) {
+        NSURL *URL = nil;
+        if ([url hasPrefix:@"http"]) {
+            URL = [NSURL URLWithString:url];
+        }else{
+            URL = [NSURL fileURLWithPath:url];
+        }
+        if (URL) {
+            [self.playerView playWithUrl:URL];
+        }
+    } 
+}
+
+-(void)setContentMode:(UIViewContentMode)contentMode{
+    [super setContentMode:contentMode];
+    if (contentMode = UIViewContentModeScaleAspectFill) {
+        self.playerView.videoGravity = AVLayerVideoGravityResizeAspectFill;
+    }
+}
+
+#pragma mark -- Lazy Func --
 
 -(FZAVPlayerView *)playerView{
     if (_playerView == nil) {
@@ -52,7 +79,7 @@
         _playerView.showTitleBar = NO;
         _playerView.showBackBtn = NO;
         _playerView.autoReplay = YES;
-        _playerView.disableFullScreen = NO;
+        _playerView.disableFullScreen = YES;
         _playerView.disableAdjustBrightnessOrVolume = YES;
         _playerView.videoGravity = AVLayerVideoGravityResizeAspect;
         _playerView.showInView = self;

@@ -11,6 +11,7 @@
 #endif
 
 #import "FZFilePreviewer.h"
+#import "FZFilePreviewerBundle.h"
 #import "FZFilePreviewGifCell.h"
 #import "FZFilePreviewLiveCell.h"
 #import "FZFilePreviewPictureCell.h"

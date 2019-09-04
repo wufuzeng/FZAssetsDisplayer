@@ -1,7 +1,11 @@
 PODS:
-  - FZAVPlayer (0.0.1)
+  - FZAVPlayer (0.0.3)
   - FZFilePreviewer (0.0.1):
     - FZAVPlayer (~> 0.0.1)
+    - SDWebImage (~> 4.1.2)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
 
 DEPENDENCIES:
   - FZFilePreviewer (from `../`)
@@ -9,14 +13,16 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - FZAVPlayer
+    - SDWebImage
 
 EXTERNAL SOURCES:
   FZFilePreviewer:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FZAVPlayer: 8d2f8d8713906a12e93206f8a41a5d1fec669132
-  FZFilePreviewer: 80712ce817f5e599c14a890af8e3cf62a60d1d76
+  FZAVPlayer: 8e588d69457f1def2ccdb98f518e4eaef299c49f
+  FZFilePreviewer: 62ac77e201a7ac7c56f756971b5f71137e3f90a1
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
 
 PODFILE CHECKSUM: 9de3274fbabd07ebf09d9661bde60f2632e2f3e8
 

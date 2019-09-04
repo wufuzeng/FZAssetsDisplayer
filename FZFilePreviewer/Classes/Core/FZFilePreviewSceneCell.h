@@ -6,12 +6,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FZFilePreviewModel.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FZFilePreviewSceneCell : UICollectionViewCell
 
-@property (nonatomic,strong) NSArray<UIImage *>*images;
+-(void)configWithModel:(FZFilePreviewModel *)model;
 
 - (void)startWaggle;
 

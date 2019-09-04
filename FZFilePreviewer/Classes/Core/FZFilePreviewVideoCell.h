@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FZFilePreviewVideoCell : UICollectionViewCell
 
-@property (nonatomic,strong) NSURL *URL;
+@property (nonatomic,strong) NSString *url;
+
+@property (nonatomic,copy) void(^playCompletedHandler)(void);
 
 -(void)startPlay;
 

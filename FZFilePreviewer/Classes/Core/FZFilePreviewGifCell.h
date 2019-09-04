@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) FZGifImageView *gifImageView;
 
- 
+-(void)configWithModel:(FZFilePreviewModel *)model;
 
 
 @end

@@ -26,6 +26,7 @@
 		604BB14422E3032800FF2D96 /* Test.mov in Resources */ = {isa = PBXBuildFile; fileRef = 604BB14322E3032800FF2D96 /* Test.mov */; };
 		605A008A22E1CC7D00F6715E /* GifQRCode.gif in Resources */ = {isa = PBXBuildFile; fileRef = 605A008922E1CC7D00F6715E /* GifQRCode.gif */; };
 		605A008E22E1CF7D00F6715E /* picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 605A008D22E1CF7D00F6715E /* picture.png */; };
+		60CB2F2422E6E0CC00ABC99C /* gifpicture.gif in Resources */ = {isa = PBXBuildFile; fileRef = 60CB2F2322E6E0CC00ABC99C /* gifpicture.gif */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		B4E4E957DAA003A4EE08941D /* Pods_FZFilePreviewer_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88FEF9942DE296161FFCCD77 /* Pods_FZFilePreviewer_Tests.framework */; };
@@ -71,6 +72,7 @@
 		605A008922E1CC7D00F6715E /* GifQRCode.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = GifQRCode.gif; sourceTree = "<group>"; };
 		605A008D22E1CF7D00F6715E /* picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = picture.png; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		60CB2F2322E6E0CC00ABC99C /* gifpicture.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gifpicture.gif; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88FEF9942DE296161FFCCD77 /* Pods_FZFilePreviewer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FZFilePreviewer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 		604BB14222E3031200FF2D96 /* Resoures */ = {
 			isa = PBXGroup;
 			children = (
+				60CB2F2322E6E0CC00ABC99C /* gifpicture.gif */,
 				604BB14322E3032800FF2D96 /* Test.mov */,
 				605A008D22E1CF7D00F6715E /* picture.png */,
 				604BB12722E2B74900FF2D96 /* picture1.jpg */,
@@ -315,6 +318,7 @@
 				605A008A22E1CC7D00F6715E /* GifQRCode.gif in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				605A008E22E1CF7D00F6715E /* picture.png in Resources */,
+				60CB2F2422E6E0CC00ABC99C /* gifpicture.gif in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,11 +387,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-FZFilePreviewer_Example/Pods-FZFilePreviewer_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FZAVPlayer/FZAVPlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/FZFilePreviewer/FZFilePreviewer.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FZAVPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FZFilePreviewer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

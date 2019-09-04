@@ -20,9 +20,13 @@ UICollectionViewDelegateFlowLayout,
 UICollectionViewDataSource
 >
 
+@property (nonatomic,strong) UILabel *label;
+
 @property (nonatomic,strong) UICollectionView *collectionView;
 
 @property (nonatomic,strong) NSArray <FZFilePreviewModel *> *files;
+
+@property (nonatomic,assign) NSInteger currentIndex;
 
 @end
 
@@ -32,21 +36,73 @@ UICollectionViewDataSource
     if (self = [super initWithFrame:frame]) {
         CGRect nFrame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
         self.collectionView.frame = nFrame;
+        self.currentIndex = 0;
         [self setupViews];
     }
     return self;
 }
 
+-(void)layoutSubviews{
+    [super layoutSubviews];
+    
+    CGRect labelRect = CGRectMake(
+                                  CGRectGetWidth(self.frame)-30-20,
+                                  20,
+                                  30,
+                                  30);
+    self.label.frame = labelRect;
+    
+}
+
 #pragma mark -- UI ----
 -(void)setupViews{
-    
+    [self collectionView];
+    [self label];
 }
 
 -(void)preview:(NSArray <FZFilePreviewModel *>*)files{
     
     self.files = files;
+    [self updatePageNumber];
     [self.collectionView reloadData];
     
+}
+ 
+-(void)updatePageNumber{
+    if (self.showPageControl) {
+        self.label.hidden = !self.files.count;
+    }
+    self.label.text = [NSString stringWithFormat:@"%ld/%ld",(long)self.currentIndex+1,(long)self.files.count];
+}
+
+-(void)startCurrentPageActivity{
+    if(!self.files.count) return;
+    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0]];
+    if ([cell isKindOfClass:[FZFilePreviewGifCell class]]) {
+        FZFilePreviewGifCell* CELL = (FZFilePreviewGifCell *)cell;
+        [CELL.gifImageView startGifAnimating];
+    }else if ([cell isKindOfClass:[FZFilePreviewSceneCell class]]) {
+        FZFilePreviewSceneCell* CELL = (FZFilePreviewSceneCell *)cell;
+        [CELL startWaggle];
+    }if ([cell isKindOfClass:[FZFilePreviewVideoCell class]]) {
+        FZFilePreviewVideoCell* CELL = (FZFilePreviewVideoCell *)cell;
+        [CELL startPlay];
+    }
+}
+
+-(void)stopCurrentPageActivity{
+    if(!self.files.count) return;
+    UICollectionViewCell *cell = [self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:self.currentIndex inSection:0]];
+    if ([cell isKindOfClass:[FZFilePreviewGifCell class]]) {
+        FZFilePreviewGifCell* CELL = (FZFilePreviewGifCell *)cell;
+        [CELL.gifImageView stopGifAnimating];
+    }else if ([cell isKindOfClass:[FZFilePreviewSceneCell class]]) {
+        FZFilePreviewSceneCell* CELL = (FZFilePreviewSceneCell *)cell;
+        [CELL stopWaggle];
+    }if ([cell isKindOfClass:[FZFilePreviewVideoCell class]]) {
+        FZFilePreviewVideoCell* CELL = (FZFilePreviewVideoCell *)cell;
+        [CELL stopPlay];
+    }
 }
 
 #pragma mark -- UICollectionViewDataSource ---
@@ -61,29 +117,20 @@ UICollectionViewDataSource
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     FZFilePreviewModel *model = self.files[indexPath.row];
-    
-
     if (model.fileType == FZFilePreviewTypePicture) {
         FZFilePreviewPictureCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewPictureCell class]) forIndexPath:indexPath];
-        cell.imageView.image = model.image;
-        
-        
-        if (indexPath.row % 2 == 0) {
-            cell.imageView.backgroundColor = [UIColor cyanColor];
-        }else{
-            cell.imageView.backgroundColor = [UIColor yellowColor];
-        }
-        
-        
+        [cell configWithModel:model];
+        cell.canZoom = self.canZoomPic;
         return cell;
     } else if (model.fileType == FZFilePreviewTypeGif) {
         FZFilePreviewGifCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewGifCell class]) forIndexPath:indexPath];
-        cell.gifImageView.image = model.image;
-        cell.gifImageView.data = model.data;
+        
+        [cell configWithModel:model];
+        
         return cell;
     } else if (model.fileType == FZFilePreviewTypeScene) {
         FZFilePreviewSceneCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewSceneCell class]) forIndexPath:indexPath];
-        cell.images = model.images;
+        [cell configWithModel:model];
         
         return cell;
     } else if (model.fileType == FZFilePreviewTypeLive) {
@@ -92,53 +139,58 @@ UICollectionViewDataSource
         return cell;
     } else if (model.fileType == FZFilePreviewTypeVideo) {
         FZFilePreviewVideoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewVideoCell class]) forIndexPath:indexPath];
-        
-        cell.URL = model.URL;
-        //[cell stopPlay];
+        cell.contentMode = model.contentMode;
+        cell.url = model.link;
         return cell;
     } else   {
         FZFilePreviewVideoCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewVideoCell class]) forIndexPath:indexPath];
-        
-        
         return cell;
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);{
-    FZFilePreviewModel *model = self.files[indexPath.row];
-    if (model.fileType == FZFilePreviewTypeScene){
-        FZFilePreviewSceneCell * CELL = (FZFilePreviewSceneCell*)cell;
-        [CELL startWaggle];
-    } else if (model.fileType == FZFilePreviewTypeGif) {
-        FZFilePreviewGifCell * CELL = (FZFilePreviewGifCell *)cell;
-        [CELL.gifImageView startAnimating];
-    } else if (model.fileType == FZFilePreviewTypeVideo) {
-        FZFilePreviewVideoCell * CELL = (FZFilePreviewVideoCell *)cell;
-        [CELL startPlay];
+//- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);{
+//    FZFilePreviewModel *model = self.files[indexPath.row];
+//    if (model.fileType == FZFilePreviewTypeScene){
+//        FZFilePreviewSceneCell * CELL = (FZFilePreviewSceneCell*)cell;
+//        [CELL stopWaggle];
+//    } else if (model.fileType == FZFilePreviewTypeGif) {
+//        FZFilePreviewGifCell * CELL = (FZFilePreviewGifCell *)cell;
+//        [CELL.gifImageView stopGifAnimating];
+//    } else if (model.fileType == FZFilePreviewTypeVideo) {
+//        FZFilePreviewVideoCell * CELL = (FZFilePreviewVideoCell *)cell;
+//        [CELL stopPlay];
+//    }
+//}
+
+#pragma mark -- UIScrellViewDelegate --
+
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self stopCurrentPageActivity];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+     NSInteger pageIndex = scrollView.contentOffset.x / CGRectGetWidth(scrollView.frame);
+    self.currentIndex = pageIndex;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self updatePageNumber];
+    [self startCurrentPageActivity];
+    if ([self.delegate respondsToSelector:@selector(previewView:scrollToIndex:)]) {
+        [self.delegate previewView:self scrollToIndex:self.currentIndex];
     }
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath NS_AVAILABLE_IOS(8_0);{
-    FZFilePreviewModel *model = self.files[indexPath.row];
-    if (model.fileType == FZFilePreviewTypeScene){
-        FZFilePreviewSceneCell * CELL = (FZFilePreviewSceneCell*)cell;
-        [CELL stopWaggle];
-    } else if (model.fileType == FZFilePreviewTypeGif) {
-        FZFilePreviewGifCell * CELL = (FZFilePreviewGifCell *)cell;
-        [CELL.gifImageView stopGifAnimating];
-    } else if (model.fileType == FZFilePreviewTypeVideo) {
-        FZFilePreviewVideoCell * CELL = (FZFilePreviewVideoCell *)cell;
-        [CELL stopPlay];
-    }
-}
+
 
 
 #pragma mark -- UICollectionViewDelegate ---
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath;{
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
-    
  
-    
+    if ([self.delegate respondsToSelector:@selector(previewView: clickedIndex:)]) {
+        [self.delegate previewView:self clickedIndex:indexPath.row];
+    }
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
@@ -164,8 +216,27 @@ UICollectionViewDataSource
     [self.collectionView layoutIfNeeded];
 }
 
+-(void)setShowPageControl:(BOOL)showPageControl{
+    _showPageControl = showPageControl;
+    _label.hidden = !showPageControl;
+}
 
 #pragma mark -- Lazy Func ----
+
+- (UILabel *)label{
+    if (_label == nil) {
+        _label = [UILabel new];
+        _label.backgroundColor = [UIColor colorWithWhite:1 alpha:0.3];
+        _label.hidden = YES;
+        _label.layer.cornerRadius = 15;
+        _label.layer.masksToBounds = YES;
+        _label.textColor = [UIColor whiteColor];
+        _label.textAlignment = NSTextAlignmentCenter;
+        _label.font = [UIFont systemFontOfSize:13];
+        [self addSubview:_label];
+    }
+    return _label;
+}
 
 -(UICollectionView *)collectionView{
     if (_collectionView == nil) {
@@ -175,9 +246,9 @@ UICollectionViewDataSource
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowFayout];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
-        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.showsHorizontalScrollIndicator = NO;
         _collectionView.pagingEnabled = YES;
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor blackColor];
  
         [_collectionView registerClass:[FZFilePreviewPictureCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewPictureCell class])];
         [_collectionView registerClass:[FZFilePreviewGifCell class] forCellWithReuseIdentifier:NSStringFromClass([FZFilePreviewGifCell class])];

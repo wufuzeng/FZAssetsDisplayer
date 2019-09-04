@@ -17,6 +17,10 @@
 
 @implementation FZFilePreviewGifCell
 
+-(void)configWithModel:(FZFilePreviewModel *)model{
+    [self.gifImageView configWithModel:model];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         CGRect nFrame = CGRectMake(0, 0, CGRectGetWidth(frame), CGRectGetHeight(frame));
@@ -30,14 +34,13 @@
 -(void)setupViews{
     [self gifImageView];
 }
- 
-
-
+  
 #pragma mark -- Lazy Func --
 
 -(FZGifImageView *)gifImageView{
     if (_gifImageView == nil) {
         _gifImageView = [[FZGifImageView alloc]init];
+        _gifImageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.contentView addSubview:_gifImageView];
     }
     return _gifImageView;

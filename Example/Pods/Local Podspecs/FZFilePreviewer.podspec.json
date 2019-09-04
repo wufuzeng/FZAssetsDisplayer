@@ -22,9 +22,22 @@
     "FZFilePreviewer/Classes/*",
     "FZFilePreviewer/Classes/**/*"
   ],
+  "resource_bundles": {
+    "FZFilePreviewer": [
+      "FZFilePreviewer/Assets/*.png"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "CoreMotion"
+  ],
   "dependencies": {
     "FZAVPlayer": [
       "~> 0.0.1"
+    ],
+    "SDWebImage": [
+      "~> 4.1.2"
     ]
   }
 }

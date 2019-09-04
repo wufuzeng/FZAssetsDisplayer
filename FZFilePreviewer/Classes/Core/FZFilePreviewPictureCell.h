@@ -6,12 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FZFilePreviewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FZFilePreviewPictureCell : UICollectionViewCell
 
-@property (nonatomic,strong) UIImageView *imageView;
+@property (nonatomic,assign) BOOL canZoom;
+
+-(void)configWithModel:(FZFilePreviewModel *)model;
 
 @end
 

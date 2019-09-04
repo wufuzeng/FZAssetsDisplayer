@@ -33,11 +33,12 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.source_files = ['FZFilePreviewer/Classes/*','FZFilePreviewer/Classes/**/*']
   
-  # s.resource_bundles = {
-  #   'FZFilePreviewer' => ['FZFilePreviewer/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'FZFilePreviewer' => ['FZFilePreviewer/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'Foundation','CoreMotion'
   s.dependency 'FZAVPlayer', '~> 0.0.1'
+  s.dependency 'SDWebImage', '~> 4.1.2'
 end
